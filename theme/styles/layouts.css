@@ -11,9 +11,9 @@
     color: var(--slidev-theme-primary);
   }
 
-  h1 + p {
+  /* h1 + p {
     @apply -mt-2 opacity-50 mb-4;
-  }
+  } */
 
   p + h2, ul + h2, table + h2 {
     @apply mt-10;
