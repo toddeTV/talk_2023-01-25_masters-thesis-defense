@@ -1,0 +1,40 @@
+{
+  "name": "talk_2023-01-25_masters-thesis-defense",
+  "version": "v0.0.0",
+  "description": "Slides for my the talk on 2023-01-20 at the university 'Technische Universität Dresden' about FMADB, which was my master's thesis defense.",
+  "license": "CC-BY-NC-ND-4.0",
+  "author": "Thorsten Seyschab <business@todde.tv> (https://todde.tv/)",
+  "contributors": [
+    {
+      "name": "Thorsten Seyschab",
+      "email": "business@todde.tv",
+      "url": "https://todde.tv/"
+    }
+  ],
+  "homepage": "https://github.com/toddeTV/talk_2023-01-25_masters-thesis-defense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toddeTV/talk_2023-01-25_masters-thesis-defense.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toddeTV/talk_2023-01-25_masters-thesis-defense/issues"
+  },
+  "scripts": {
+    "slidev": "slidev",
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "devRemote": "slidev --open --remote",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@altgen/typer-composable": "1.3.0",
+    "@slidev/cli": "0.36.8",
+    "@slidev/theme-seriph": "0.21.3"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "1.1.17",
+    "@iconify-json/mdi": "1.1.34",
+    "@iconify-json/vscode-icons": "1.1.16",
+    "typescript": "4.8.4"
+  }
+}
