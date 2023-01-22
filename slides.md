@@ -196,40 +196,173 @@ layout: two-cols
 -->
 
 ---
+clicks: 4
+---
 
 # Das Problem
 
-Grobe Pipeline.
+<AppAnalysisPipeline :animation="4" />
+
+<div class="absolute bg-white w-60 h-20 top-68 left-50" v-click-hide></div>
+<div class="absolute bg-white w-30 h-20 top-68 left-110" v-click-hide></div>
+<div class="absolute bg-white w-38 h-20 top-68 left-140" v-click-hide></div>
+<!-- <div class="absolute bg-white w-60 h-20 top-68 left-178" v-click-hide></div> -->
+
+<!--
+* Am Anfang stehen viele Filme ...
+* ... am Ende wollen wir Erkenntnisse aus den Filmmusiken dieser haben
+* Erkenntnisse vergleichbar mit anderen, nicht nur für sich selbst.
+-->
 
 ---
 
 # Das Problem
 
-Metadaten Film
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="87" />
+
+<div class="px-3 flex flex-row">
+
+<div class="w-45 mr-10 flex-shrink-0">
+  <img src="/assets/movie-covers/tmdb-120.jpg" />
+  <div class="text-right text-xs">
+    &copy; themoviedb.org
+  </div>
+</div>
+
+<VClicks class="text-lg">
+
+* Unterschiedliche Namen (Sprachen & Länder)
+  * [ger] Der Herr der Ringe - Die Gefährten
+  * [eng] The Lord of the Rings: The Fellowship of the Ring
+* Unterschiedliche Längen zwischen und innerhalb Länder
+  * Kinofassung: 171 Minuten
+  * Extended Edition: 218 Minuten
+* Medium (Konvertierung & Kompression)
+  * DVD, Netflix, Amazon Prime, ...
+
+</VClicks>
+
+</div>
 
 ---
 
 # Das Problem
 
-Parameter definieren
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="247" />
+
+<VClicks class="px-3 text-lg">
+
+* viele <mdi-exclamation-thick class="text-red-500" />
+  * BPM, Time Signature, Dynamic, Scale, Effect, Cluster, Function, ...
+* unterschiedliche Herangehensweisen für gleiche Parameter
+  * Hansjörg Pauli definiert 3 Funktionen von Filmmusik
+  * Norbert Jürgen Schneider definiert 20 Funktionen von Filmmusik
+* unterschiedliche Bezeichnungen für gleiche Parameter
+  * Diegetische Musik == Inzidenzmusik == Source-Musik
+* Parameter sind verschieden und facettenreich
+  * z.B. BPM nicht nur reine Zahlen (Accelerando, Unbekannt, ...)
+
+</VClicks>
+
+<!--
+* viele Parameter, welche nehme ich, welche bringen mir etwas?
+* BPM:
+  * Accelerando = schneller werden
+  * Ritardando = langsamer werden
+-->
+
+---
+clicks: 5
+---
+
+# Das Problem
+
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="424" />
+
+<div class="px-3 text-lg">
+
+<table>
+  <thead class="!font-bold">
+    <tr>
+      <td v-click="1" class="w-1/2 border-r-1">
+        Computergestützt<br>
+        <ul class="font-normal">
+          <li v-click="2">Audiospuren</li>
+          <li v-click="2" class="-mt-2">Musiknoten</li>
+        </ul>
+      </td>
+      <td v-click="1" class="align-top">
+        Händisch
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-click="3">
+      <td class="border-r-1">
+        Audiospur direkt technisch schwer, da Musik, Effekten und Sprache gemischt
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr v-click="4">
+      <td class="border-r-1">
+        Rechtliches Problem bei direkter Verwendung
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr v-click="5">
+      <td colspan="2" class="text-center">
+        Notenmaterial selten vorhanden
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<!--
+* separat veröffentlichte Soundtracks weichen von Filmen ab
+-->
 
 ---
 
 # Das Problem
 
-Analyse
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="558" />
+
+<VClicks class="px-3 text-lg space-y-2">
+
+* Abhängig von der Speicherung der Analysen
+  * Eine Tabelle für alle Parameter?
+  * Pro Parameter eine Tabelle?
+  * Andere Repräsentation statt Tabellen?
+* Schön wären Diagramme
+* Tabellen oder Diagramme miteinander vergleichen
+
+</VClicks>
 
 ---
 
 # Das Problem
 
-Auswertung
+<AppAnalysisPipeline />
 
----
+<AppArrowUp :left="715" />
 
-# Das Problem
+<VClicks class="space-y-2 text-xl px-3">
 
-Erkenntnisse
+* anderen zeigen und sich freuen 😊
+
+</VClicks>
 
 ---
 
