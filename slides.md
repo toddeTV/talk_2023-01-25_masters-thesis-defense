@@ -47,23 +47,153 @@ drawings:
   syncAll: false
 ---
 
-# Startfolie
+<AppIntroLogoFullscreen />
+
+<!--
+* Begrüßung zu meiner Verteidigung, welche ein 30 min Vortrag mit anschließenden 30 min Fragen ist.
+* Fragen bitte notieren und am Ende stellen.
+* Gäste, die nicht vom Fach sind, sind heute hier -> daher 
+* Ich stelle hier eine Übersicht meiner Arbeit und der Ergebnisse dieser vor. Tiefergehende Informationen gerne bei
+  Bedarf am Ende erfragen. Zeit aber einfach zu knapp, die rund 120 Seiten meiner Arbeit in 30 Minuten vorzustellen.
+-->
 
 ---
-
-# Über mich
-
+layout: two-cols
 ---
 
-# Team
+<h1>Über mich</h1>
+
+<div class="flex flex-col justify-center items-center mt-14">
+  <img class="w-50 rounded-full"
+      src="/assets/persons/Thorsten-Seyschab.jpg"
+  />
+  <h2 class="mt-4">Thorsten Seyschab</h2>
+</div>
+
+::right::
+
+<VClicks class="space-y-2 text-xl h-full mt-22">
+
+* <mdi-desktop-classic class="baseColor mr-2" /> Informatiker aus Deutschland<br>
+  <span class="text-sm ml-10">Spezialisiert in Web Technologien & Datenbanken</span>
+* <mdi-console class="baseColor mr-2" /> Full Stack Web Developer
+* <mdi-school-outline class="baseColor mr-2" /> Technische Universität Dresden
+* <mdi-email class="baseColor mr-2" /> [business@todde.tv](business@todde.tv)
+* <mdi-web class="baseColor mr-2" /> [https://todde.tv/](https://todde.tv/)
+  * <mdi-github class="baseColor mr-2" /> [toddeTV](https://github.com/toddeTV)
+  * <mdi-gitlab class="baseColor mr-2" /> [toddeTV](https://gitlab.com/toddeTV)
+
+</VClicks>
+
+---
+layout: two-cols
+---
+
+<h1><span class="line-through mr-6">Über mich</span>FMADB Team</h1>
+
+<div class="flex flex-col justify-center items-center mt-14">
+  <img class="w-50 rounded-full"
+       src="/assets/persons/Thorsten-Seyschab.jpg"
+  />
+  <h2 class="mt-4">Thorsten Seyschab</h2>
+</div>
+
+<div class="absolute w-full flex flex-row justify-center left-0 px-40 pt-10">
+  <div>
+    <img class="h-15 p-2"
+         src="/assets/attribution_logos/TU-Dresden.svg"
+    />
+  </div>
+  <div>
+    <img class="h-15 p-2 mx-10"
+         src="/assets/attribution_logos/HfmDD.png"
+    />
+  </div>
+  <div>
+    <img class="h-15 p-2"
+         src="/assets/attribution_logos/epfl.svg"
+    />
+  </div>
+</div>
+
+::right::
+
+<h1 class="opacity-0">.</h1>
+
+<div class="flex flex-col justify-center items-center mt-14">
+  <img class="w-50 rounded-full"
+      src="/assets/persons/Susanne-Hardt.jpg"
+  />
+  <h2 class="mt-4">Susanne Hardt</h2>
+</div>
+
+<!--
+* Hfm vertreten durch Susanne
+* TU-Dresden vertreten durch mich
+* Epfl in der Schweiz als Expertenfeedback
+* und und und
+* Doch um zu verstehen, was FMADB ist und warum es einzigartig ist, müssen wir erst das übergeordnete Vorhaben verstehen.
+-->
 
 ---
 
 # Motivation
 
+<VClicks class="space-y-2 text-xl">
+
+* <mdi-crosshairs class="baseColor mr-2" /> Ziel der Dissertation von Susanne:<br>
+  <span class="text-sm ml-10">Korpusstudie über 50 Filme.</span><br>
+  <span class="text-sm ml-10">Erkenntnisse aus Filmmusik gewinnen.</span><br>
+  <span class="text-sm ml-10">Dafür viele unterschiedliche Parameter betrachten.</span><br>
+  <span class="text-sm ml-10">Zusammenhänge und Muster ermitteln, Modelle finden.</span>
+* <mdi-book-open class="baseColor mr-2 mt-4" /> Beispiel:<br>
+  <span class="text-sm ml-10">Beeinflusst Musik die Wahrnehmung des Zuschauers in Hinsicht auf (Un-)Vorhersehbarkeit des Ausgangs der Szene?</span><br>
+  <span class="text-sm ml-10">Und wenn ja, welche Gestaltungsparameter in der Komposition sind dafür verantwortlich?</span>
+
+</VClicks>
+
+<div v-click class="text-2xl text-center mt-8 baseColor">
+  <mdi-arrow-right class="mr-2 pt-1" />
+  <span>Geht das nicht ohne einen Informatiker?</span>
+  <mdi-arrow-left class="ml-2 pt-1" />
+</div>
+
+<!--
+* "Modell" ist falsch, eigentlich "Filmmusikalische Topologien"
+* Ohne Informatiker: Gibt es schon vergleichbares, an dem man sich orientieren kann?
+-->
+
 ---
 
-# Verwandte Arbeiten
+<div class="flex flex-row">
+  <h1>Verwandte Arbeiten</h1>
+  <div class="pt-3 pl-8 text-xl baseColor">Wissenschaftliche Arbeiten</div>
+</div>
+
+<VClicks class="space-y-0.5 text-xl">
+
+* Betrachtung einzelner Filmcharaktere in kontextlosen und abstrakten Bewegbilder:
+  * <span class="text-gray-400 text-sm">Annabel Cohen, Sandra K. Marshall [<AppLiteratureHyperlink>MC88</AppLiteratureHyperlink>]</span>
+  * <span class="text-gray-400 text-sm">Bethold Hoeckner [<AppLiteratureHyperlink>Hoe11</AppLiteratureHyperlink>]</span>
+* Einzelfilmanalysen:
+  * <span class="text-gray-400 text-sm">Annabel Cohen zu dem Film "The red Violin" [<AppLiteratureHyperlink>Coh</AppLiteratureHyperlink>]</span>
+* Filmübergreifende eingeschänkte Analysen:
+  * <span class="text-gray-400 text-sm">Nathan Fink zu sechs Filmen von Alfred Hitchcock [<AppLiteratureHyperlink>Fin06</AppLiteratureHyperlink>]</span>
+  * <span class="text-gray-400 text-sm">Pascal Rudolph zu 12 Filmen [<AppLiteratureHyperlink>Rud22</AppLiteratureHyperlink>]</span>
+  * <span class="text-gray-400 text-sm">Philip Kümpel zu verschiedenen zufällig ausgewählten Filmen [<AppLiteratureHyperlink>Küm19</AppLiteratureHyperlink>]</span>
+* Filmübergreifende vollständige Analysen:
+  * <span class="text-red-500">?</span>
+
+</VClicks>
+
+<!--
+* Keiner der Arbeiten deckt die Filme vollständig mit allen Parametern ab, z.B.:
+  * Philip Kümpel konzentriert sich auf die Instrumentation
+  * Pascal Rudolph nur zu ausgewählten Musikeinsätzen & nur 12 Filme  
+    In deinem Buch "Präexistente Musik im Film" von 2022
+  * Annabel Cohen, Sandra K. Marshall und Bethold Hoeckner lassen Filmdramaturgie komplett weg
+* Warum also gibt es solch eine große, vollumfängliche Korpusstudie noch nicht? -> Überlegen wir uns einmal das Herangehen
+-->
 
 ---
 
