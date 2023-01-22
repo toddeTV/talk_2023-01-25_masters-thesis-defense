@@ -368,23 +368,201 @@ clicks: 5
 
 # Warum gibt es solch große Korpusstudien noch nicht?
 
+<VClicks class="space-y-10 mt-15 text-xl">
+
+* <mdi-image-size-select-small class="baseColor mr-2" /> Umfang<br>
+  <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
+* <mdi-select-compare class="baseColor mr-2" /> Vergleichbarkeit<br>
+  <span class="text-sm ml-10">einheitliche Struktur bereitstellen</span>
+  
+</VClicks>
+
+<div v-click class="text-2xl text-center mt-11 text-gray-400">
+  <mdi-arrow-right class="mr-2 pt-1" />
+  <span class="line-through">Geht das nicht ohne einen Informatiker?</span>
+  <mdi-arrow-left class="ml-2 pt-1" />
+</div>
+
+<div v-after class="text-2xl text-center mt-1 baseColor">
+  <mdi-arrow-right class="mr-2 pt-1" />
+  <span>Wir brauchen die Informatik als Lösung!</span>
+  <mdi-arrow-left class="ml-2 pt-1" />
+</div>
+
+<!--
+* nur vereinzelte filmübergreifende Studien, da sehr komplex und umfangreich
+* Möglichkeit der Vereinheitlichung der Analysen filmübergreifend, da Film sehr individuell
+  * Pascal Rudolph "Präexistente Musik im Film" 2022 [?] sagt schon in seiner Einleitung, dass er ueberall anders
+    vorgehen musste
+* von anderen kann man nicht nutzen, daher immer wieder von vorne
+* Wie meine Recherche zeigte, gibt es momentan nichts hierfür //TODO grob als eigene Folie?
+* Das heisst, wir muessen da ran.
+-->
+
 ---
 
 # Die Lösung: FMADB
 
-Metadaten Film
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="87" />
+
+<div class="px-3 flex flex-row relative">
+
+<div class="w-45 mr-10 flex-shrink-0">
+  <img src="/assets/movie-covers/tmdb-120.jpg" />
+  <div class="text-right text-xs">
+    &copy; themoviedb.org
+  </div>
+</div>
+
+<div class="text-lg text-gray-400 pt-9">
+
+* Unterschiedliche Namen (Sprachen & Länder)
+  * [ger] Der Herr der Ringe - Die Gefährten
+  * [eng] The Lord of the Rings: The Fellowship of the Ring
+* Unterschiedliche Längen zwischen und innerhalb Länder
+  * Kinofassung: 171 Minuten
+  * Extended Edition: 218 Minuten
+* Medium (Konvertierung & Kompression)
+  * DVD, Netflix, Amazon Prime, ...
+
+</div>
+
+<div class="w-full flex flex-row text-lg absolute left-56.5" v-click>
+  <mdi-check class="text-green-500 mr-2" />
+  Filme mit Metainformationen automatisch von
+  <img src="/assets/TMDB_Asset3.svg" class="h-2.5 mx-2 mt-2.5" />
+  crawlen
+</div>
+
+<div class="w-full text-lg absolute left-63.5 top-18 bg-white h-18" v-click>
+<mdi-check class="text-green-500" /> global nur Englische Titel durch crawlen nutzen
+</div>
+
+<div class="w-full text-lg absolute left-63.5 top-42.5 bg-white h-18" v-click>
+<mdi-check class="text-green-500" /> individuell vermerkbare Filmlänge durch Nutzer
+</div>
+
+<div class="w-full text-lg absolute left-63.5 top-67 bg-white" v-click>
+<mdi-check class="text-green-500" /> individuell vermerkbar durch Nutzer
+</div>
+
+</div>
 
 ---
 
 # Die Lösung: FMADB
 
-Parameter definieren
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="247" />
+
+<div class="px-3 text-lg relative">
+
+<div class="text-gray-400">
+
+* viele <mdi-exclamation-thick class="text-red-500" />
+  * BPM, Time Signature, Dynamic, Scale, Effect, Cluster, Function, ...
+* unterschiedliche Herangehensweisen für gleiche Parameter
+  * Hansjörg Pauli definiert 3 Funktionen von Filmmusik
+  * Norbert Jürgen Schneider definiert 20 Funktionen von Filmmusik
+* unterschiedliche Bezeichnungen für gleiche Parameter
+  * Diegetische Musik == Inzidenzmusik == Source-Musik
+* Parameter sind verschieden und facettenreich
+  * z.B. BPM nicht nur reine Zahlen (Accelerando, Unbekannt, ...)
+
+</div>
+
+<div class="w-full absolute top-9 left-8 bg-white" v-click>
+<mdi-check class="text-green-500" /> Fleißarbeit, aktuell nur grundlegende musiktheoretische Parameter
+</div>
+
+<div class="w-full absolute top-25 left-8 bg-white h-18" v-click>
+<mdi-check class="text-green-500" /> festlegen und User ggf Freiraum ermöglichen
+</div>
+
+<div class="w-full absolute top-50 left-8 bg-white" v-click>
+<mdi-check class="text-green-500" /> festlegen und User ggf Terminologieänderungen ermöglichen
+</div>
+
+<div class="w-full absolute top-66 left-8 bg-white" v-click>
+<mdi-check class="text-green-500" /> Sonderfälle durch individuelle Lösungen abdecken
+</div>
+
+</div>
+
+<!--
+* Analyseparameter unterteilt in:
+  * Musiktheoretischer Parameter
+  * Dramaturgische Parameter
+  * Bildgestalterische Parameter
+  * Drehbuchbezogene Parameter
+  * Wahrnehmungs-Parameter
+  * Sonstiger Parameter
+-->
 
 ---
 
 # Die Lösung: FMADB
 
-Analyse
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="424" />
+
+<div class="px-3 text-lg relative">
+
+<table class="text-gray-400">
+  <thead class="!font-bold">
+    <tr>
+      <td class="w-1/2 border-r-1">
+        Computergestützt<br>
+        <ul class="font-normal">
+          <li>Audiospuren</li>
+          <li class="-mt-2">Musiknoten</li>
+        </ul>
+      </td>
+      <td class="align-top">
+        Händisch
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border-r-1">
+        Audiospur direkt technisch schwer, da Musik, Effekten und Sprache gemischt
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td class="border-r-1">
+        Rechtliches Problem bei direkter Verwendung
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="text-center">
+        Notenmaterial selten vorhanden
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="absolute flex flex-row left-111 top-1 z-10" v-click>
+  <div class="border border-green-500 rounded-lg w-30 h-10 mr-2">
+  </div>
+  <mdi-check class="text-green-500 text-xl mt-1.5" />
+</div>
+
+<div class="bg-white absolute h-55 w-113 top-4.5 left-0" v-after></div>
+
+</div>
+
+<!--
+* Rechtliche Probleme!
+-->
 
 ---
 
@@ -396,7 +574,19 @@ Auswertung
 
 # Die Lösung: FMADB
 
-Erkenntnisse
+<AppAnalysisPipeline />
+
+<AppArrowUp :left="715" />
+
+<div class="space-y-2 text-xl px-3 text-gray-400">
+
+* anderen zeigen und sich freuen 😊
+
+</div>
+
+<div class="space-y-2 text-xl pl-10 pt-3" v-click>
+  <mdi-check class="text-green-500" /> anderen zeigen und sich noch mehr freuen 🤩
+</div>
 
 ---
 
