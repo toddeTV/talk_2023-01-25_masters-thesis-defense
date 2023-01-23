@@ -747,10 +747,6 @@ clicks: 7
 
 ---
 
-# Besondere Hürden
-
----
-
 # Entwicklung des Timeline-Ansatzes
 
 <div class="flex flex-row justify-between">
@@ -793,6 +789,32 @@ clicks: 7
 
 <!--
 * echte Daten des Films `Countdown`
+-->
+
+---
+
+# Besondere Hürden
+
+<VClicks class="space-y-2 text-xl">
+
+* Konzeptionell schwierig:
+  * Umfang des Datenmodells bewältigen
+  * Parameter `Orchestration`: Detailgrad
+* Programierung schwierig:
+  * Prisma in NestJS als Code-First-Approach mit Automatischen Datenbankmigrationen
+  * Prisma Client in GraphQL in NestJS nutzen
+  * Pagination mit Prisma Client in NestJS
+  * Apollo Anomalien in Vue3: Mehrfaches triggern von Queries und Mutations
+  * Parameter `Transcription`: Musikdateien parsen
+  * globaler Pool für `Keywords` und `Instrumente`
+
+</VClicks>
+
+<!--
+* Orchestration:
+  * nicht zu detailliert, da es dann eine Transkription ist
+  * muss aber noch genug Informationen beinhalten
+* Umfang und Komplexität des Projektes (Parameter mit je individuellen Evaluationen)
 -->
 
 ---
