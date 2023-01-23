@@ -190,7 +190,7 @@ layout: two-cols
   * <span class="text-gray-400 text-sm">Pascal Rudolph zu 12 Filmen [<AppLiteratureHyperlink>Rud22</AppLiteratureHyperlink>]</span>
   * <span class="text-gray-400 text-sm">Philip Kümpel zu verschiedenen zufällig ausgewählten Filmen [<AppLiteratureHyperlink>Küm19</AppLiteratureHyperlink>]</span>
 * Filmübergreifende vollständige Analysen:
-  * <div class="w-full bg-red-600 rounded-lg text-white text-xl flex flex-row justify-center">
+  * <div class="w-full border-2 bg-red-600/10 border-red-600 rounded-lg text-red-600 text-xl flex flex-row justify-center">
       ? ? ?
     </div>
 
@@ -267,6 +267,8 @@ clicks: 5
 
 ---
 
+<AppReferenceToWrittenWork :pages="['3.5.', '3.6.1.', '4.5.6.']" />
+
 # Probleme & Lösungen
 
 <AppAnalysisPipeline />
@@ -317,6 +319,8 @@ clicks: 5
 </div>
 
 ---
+
+<AppReferenceToWrittenWork :pages="['3.6.2.', '3.7.']" />
 
 # Probleme & Lösungen
 
@@ -385,6 +389,8 @@ Kategorien:
 clicks: 6
 ---
 
+<AppReferenceToWrittenWork :pages="['2.2.', '2.4.']" />
+
 # Probleme & Lösungen
 
 <AppAnalysisPipeline />
@@ -448,6 +454,8 @@ clicks: 6
 ---
 clicks: 6
 ---
+
+<AppReferenceToWrittenWork :pages="['3.3.', '3.4.']" />
 
 # Probleme & Lösungen
 
@@ -532,6 +540,8 @@ clicks: 6
 -->
 
 ---
+
+<AppReferenceToWrittenWork :pages="['3.8.', '4.13.']" />
 
 # Das Problem
 
@@ -723,7 +733,7 @@ url: https://fmadb.org/
 clicks: 7
 ---
 
-<AppReferenceToWrittenWork :pages="['3.6.']" />
+<AppReferenceToWrittenWork :pages="['3.6.', '4.5.4.']" />
 
 # Datenmodell
 
@@ -746,6 +756,8 @@ clicks: 7
 -->
 
 ---
+
+<AppReferenceToWrittenWork :pages="['4.6.3.']" />
 
 # Entwicklung des Timeline-Ansatzes
 
@@ -793,6 +805,8 @@ clicks: 7
 
 ---
 
+<AppReferenceToWrittenWork :pages="['3.7.', '4.5.2.', '4.5.3.', '4.6.3.', '4.12.']" />
+
 # Besondere Hürden
 
 <VClicks class="space-y-2 text-xl">
@@ -807,6 +821,7 @@ clicks: 7
   * Apollo Anomalien in Vue3: Mehrfaches triggern von Queries und Mutations
   * Parameter `Transcription`: Musikdateien parsen
   * globaler Pool für `Keywords` und `Instrumente`
+  * Semantische Zusammenhänge zwischen Parametern (Timeline Logik: Dirty/Clean)
 
 </VClicks>
 
