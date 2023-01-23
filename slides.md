@@ -955,11 +955,35 @@ clicks: 7
 
 # Abweichungen zur Arbeit
 
+//TODO das ist aus Kapitel `6.3. Ausblick`
+
+<VClicks class="space-y-2 text-xl">
+
+* Anderer Hoster
+* Weitere Evaluation: `Dynamic Curve`
+* Als Reaktion auf die Umfrage:
+  * Neue Filme mit ganzer TMDB URL hinzufügbar
+  * Weiterführende Erklärungstexte in der Dokumentation
+
+</VClicks>
+
 ---
 
 # Mehr in meiner schriftlichen Arbeit
 
-//TODO Inhaltsverzeichnis
+<div class="flex flex-row justify-between">
+  <img src="/assets/written-work/page-001_cover-page.jpg" class="h-100 mx-auto border" />
+</div>
+
+---
+
+# Mehr in meiner schriftlichen Arbeit
+
+<div class="flex flex-row justify-between">
+  <img src="/assets/written-work/page-005_table-of-contents-1.jpg" class="h-100 mx-auto border" />
+  <img src="/assets/written-work/page-006_table-of-contents-2.jpg" class="h-100 mx-auto border" />
+  <img src="/assets/written-work/page-007_table-of-contents-3.jpg" class="h-100 mx-auto border" />
+</div>
 
 ---
 
