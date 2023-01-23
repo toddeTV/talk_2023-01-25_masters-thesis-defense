@@ -378,6 +378,7 @@ Kategorien:
 * viele Parameter, welche nehme ich, welche bringen mir etwas?
 * Analyseparameter unterteilt in:
   * Musiktheoretischer Parameter
+    * aufgrund Umfang hierauf konzentriert
   * Dramaturgische Parameter
   * Bildgestalterische Parameter
   * Drehbuchbezogene Parameter
@@ -452,7 +453,7 @@ clicks: 6
 -->
 
 ---
-clicks: 6
+clicks: 7
 ---
 
 <AppReferenceToWrittenWork :pages="['3.3.', '3.4.']" />
@@ -517,9 +518,9 @@ clicks: 6
 
 <div class="absolute top-59 left-130" v-click="5">
   <div class="mb-3">1. Ein Wert, sequentiell (z.B. BPM, dynamic, root)</div>
-  <div class="mb-3">2. Mehrere Werte, sequentiell (als 3 darstellen)</div>
+  <div class="mb-3">2. Mehrere Werte, sequentiell (als Typ 3 darstellbar)</div>
   <div class="mb-3">3. Ein Wert, parallel (z.B. Orchestration)</div>
-  <div class="mb-3">4. Mehrere Werte, parallel (als 3 darstellen)</div>
+  <div class="mb-3">4. Mehrere Werte, parallel (als Typ 3 darstellbar)</div>
 </div>
 
 <!-- <div class="flex flex-row">
@@ -532,11 +533,18 @@ clicks: 6
   <img src="/assets/miniTimeline.svg" class="w-95" />
 </div>
 
+<div class="absolute flex flex-row left-125 top-42 z-10" v-click="7">
+  <div class="border border-green-500 rounded-lg w-65 h-12.5 mr-2">
+  </div>
+  <mdi-check class="text-green-500 text-xl mt-1.5" />
+</div>
+
 <!--
 * Wort `Auswertung` hier etwas irreführend, da nun zweierlei gemeint ist:
   * leichte Eingabe mit Visualisierung
   * Evaluation als Erkenntnissgewinn nach Dateneingabe
 * Das wird in FMADB `Timeline` genannt
+* <span class="text-red-500 font-bold text-lg">semantische Zusammenhänge: Dirty/Clean Logik</span>
 -->
 
 ---
@@ -602,99 +610,150 @@ clicks: 6
 
 # Ecosystem
 
-<div class="absolute top-12 right-19">
-  <img src="/assets/EcosystemCommunication.svg" class="h-37" />
+<div class="w-full flex flex-row justify-center mt-30">
+  <img src="/assets/EcosystemCommunication.svg" class="h-42" />
 </div>
 
-<div class="w-full h-0 relative mt-38" v-click>
-  <div class="absolute top-0 left-0 w-full h-0.5 bg-gray-300 z-1"></div>
-  <div class="absolute top-0 left-1/2 w-0 h-0 text-xl baseColor flex flex-row justify-center">
-    <div class="-mt-3.5 z-10">
-      <div class="bg-white px-3">
-        Polyrepo
-      </div>
-    </div>
-  </div>
-</div>
+---
 
-<div class="w-full h-4"></div>
+<AppReferenceToWrittenWork :pages="['4.']" />
 
-<div class="flex flex-row justify-between">
-  <div class="py-1 px-4 w-69 flex-shrink-0" v-click>
-    <div>
-      <mdi-github class="mr-2" />
-      <a href="https://github.com/toddeTV/FMADB_frontend" target="_blank">toddeTV/FMADB_frontend</a>
+# Polyrepo
+
+<div class="relative -mt-5">
+  <div class="flex flex-row justify-between absolute">
+    <div class="py-1 px-4 w-73 flex-shrink-0" v-click>
+      <div>
+        <mdi-github class="mr-2" />
+        <a href="https://github.com/toddeTV/FMADB_backend" target="_blank">toddeTV/FMADB_backend</a>
+      </div>
+      <div class="pl-7.5 mt-3">
+        <div class="flex flex-col space-y-3">
+          <div>
+            <LogosTypescriptIcon class="mr-2" /> TypeScript
+          </div>
+          <div>
+            <LogosYarn class="mr-2" /> Yarn3
+          </div>
+          <div>
+            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
+          </div>
+          <div>
+            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
+          </div>
+          <div>
+            <LogosNestjs class="mr-2" /> NestJS
+          </div>
+          <div>
+            <logos-eslint class="mr-2" /> ESLint
+          </div>
+          <div>
+            <VscodeIconsFileTypeGraphql class="mr-2" /> GraphQL
+          </div>
+          <div>
+            <VscodeIconsFileTypeRest class="mr-2" /> REST
+          </div>
+          <div>
+            <LogosPostgresql class="mr-2" /> PostgreSQL
+          </div>
+          <div>
+            <LogosPrisma class="mr-2" /> Prisma
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="pl-7 mt-3">
-      <div class="mb-3.5">Frontend mit:</div>
-      <div class="flex flex-col space-y-3">
-        <div>
-          <LogosTypescriptIcon class="mr-2" /> TypeScript
+    <div class="py-1 px-4 w-73 flex-shrink-0" v-click>
+      <div>
+        <mdi-github class="mr-2" />
+        <a href="https://github.com/toddeTV/FMADB_frontend" target="_blank">toddeTV/FMADB_frontend</a>
+      </div>
+      <div class="pl-7.5 mt-3">
+        <div class="flex flex-col space-y-3">
+          <div>
+            <LogosTypescriptIcon class="mr-2" /> TypeScript
+          </div>
+          <div>
+            <LogosYarn class="mr-2" /> Yarn3
+          </div>
+          <div>
+            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
+          </div>
+          <div>
+            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
+          </div>
+          <div>
+            <LogosVue class="mr-2" /> Vue3
+          </div>
+          <div>
+            <logos-eslint class="mr-2" /> ESLint
+          </div>
+          <div>
+            <file-icons-graphql-codegenerator class="mr-2" /> graphql-codegen
+          </div>
+          <div>
+            <LogosApollostack class="mr-2" /> Apollo
+          </div>
+          <div>
+            <LogosVueuse class="mr-2" /> VueUse
+          </div>
+          <div>
+            <VscodeIconsFileTypeLightQuasar class="mr-2" /> Quasar
+          </div>
+          <div>
+            <material-symbols-music-note-rounded class="mr-2" /> Verovio
+          </div>
+          <div>
+            <simple-icons-apacheecharts class="mr-2" style="color: #E43961;" /> Apache ECharts
+          </div>
+          <div>
+            <logos-tailwindcss-icon class="mr-2" /> TailwindCSS
+          </div>
+          <div>
+            <logos-headlessui-icon class="mr-2" /> HeadlessUI
+          </div>
+          <!-- <div>
+            <VscodeIconsFileTypeLightQuasar class="mr-2" /> date-fns
+          </div> -->
         </div>
-        <div>
-          <LogosVue class="mr-2" /> Vue 3
-        </div>
-        <div>
-          <LogosVueuse class="mr-2" /> VueUse
-        </div>
-        <div>
-          <LogosApollostack class="mr-2" /> Apollo
-        </div>
-        <div>
-          <VscodeIconsFileTypeLightQuasar class="mr-2" /> Quasar
+      </div>
+    </div>
+    <div class="py-1 px-4 w-83 flex-shrink-0" v-click>
+      <div>
+        <mdi-github class="mr-2" />
+        <a href="https://github.com/toddeTV/FMADB_documentation" target="_blank">toddeTV/FMADB_documentation</a>
+      </div>
+      <div class="pl-7.5 mt-3">
+        <div class="flex flex-col space-y-3">
+          <div>
+            <LogosTypescriptIcon class="mr-2" /> TypeScript
+          </div>
+          <div>
+            <LogosYarn class="mr-2" /> Yarn3
+          </div>
+          <div>
+            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
+          </div>
+          <div>
+            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
+          </div>
+          <div>
+            <LogosVue class="mr-2" /> Vue3
+          </div>
+          <div>
+            <LogosVitejs class="mr-2" /> VitePress
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-1 px-4 w-69 flex-shrink-0" v-click>
-    <div>
-      <mdi-github class="mr-2" />
-      <a href="https://github.com/toddeTV/FMADB_backend" target="_blank">toddeTV/FMADB_backend</a>
-    </div>
-    <div class="pl-7 mt-3">
-      <div class="mb-3.5">Backend mit:</div>
-      <div class="flex flex-col space-y-3">
-        <div>
-          <LogosTypescriptIcon class="mr-2" /> TypeScript
-        </div>
-        <div>
-          <LogosNestjs class="mr-2" /> NestJS
-        </div>
-        <div>
-          <LogosPostgresql class="mr-2" /> PostgreSQL
-        </div>
-        <div>
-          <LogosPrisma class="mr-2" /> Prisma
-        </div>
-        <div>
-          <VscodeIconsFileTypeGraphql class="mr-2" /> GraphQL
-        </div>
-        <div>
-          <VscodeIconsFileTypeRest class="mr-2" /> REST
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-1 px-4 w-82 flex-shrink-0" v-click>
-    <div>
-      <mdi-github class="mr-2" />
-      <a href="https://github.com/toddeTV/FMADB_documentation" target="_blank">toddeTV/FMADB_documentation</a>
-    </div>
-    <div class="pl-7 mt-3">
-      <div class="mb-3.5">Dokumentation mit:</div>
-      <div class="flex flex-col space-y-3">
-        <div>
-          <LogosTypescriptIcon class="mr-2" /> TypeScript
-        </div>
-        <div>
-          <LogosVitejs class="mr-2" /> vitepress
-        </div>
-        <div>
-          <LogosVue class="mr-2" /> Vue 3
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <div class="w-full h-33 bg-red-600/10 border-2 border-red-600 rounded-lg absolute top-7.5" v-click></div>
+  <div class="w-full h-8 bg-green-600/10 border-2 border-green-600 rounded-lg absolute top-41" v-after></div>
+  <div class="w-145 h-8 bg-blue-600/10 border-2 border-blue-600 rounded-lg absolute top-49.5" v-after></div>
+  
+  <div class="w-73 h-8 bg-yellow-600/10 border-l-2 border-y-2 border-yellow-600 rounded-l-lg absolute top-58" v-after></div>
+  <div class="w-72 h-16 bg-yellow-600/10 border-r-2 border-y-2 border-yellow-600 rounded-r-lg absolute top-58 left-73" v-after></div>
+  <div class="w-72 h-8 border-l-2 border-yellow-600 rounded-r-lg absolute top-65.5 left-73" v-after></div>
 </div>
 
 <!--
@@ -778,7 +837,7 @@ clicks: 7
   </div>
   <div class="w-20/41" v-click>
     <div class="mb-2">
-      Zweiter Ansatz: Apache eCharts
+      Zweiter Ansatz: Apache ECharts
     </div>
     <div class="h-60">
       <img src="/assets/timeline-development/Countdown_new.png" />
