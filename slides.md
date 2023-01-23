@@ -888,29 +888,60 @@ Kategorien:
   </div>
 </div>
 
+<!--
+* als Webservice, da Benutzerzielgruppe und OS unabhängig
+-->
+
 ---
 layout: iframe
 url: https://fmadb.org/
 ---
+
 <!--  -->
+
 ---
 layout: iframe
 url: https://docs.fmadb.org/
 ---
+
 <!--  -->
+
 ---
 layout: iframe
 url: https://www.themoviedb.org/
 ---
+
 <!--  -->
+
 ---
 layout: iframe
 url: https://fmadb.org/
 ---
-<!--  -->
----
 
-# Backend Modell
+<!--  -->
+
+---
+clicks: 7
+---
+# Datenmodell
+
+<AppDatamodel />
+
+<!-- <img src="/assets/memes/what.jpg" class="absolute w-50 top-45 left-95" /> -->
+<!-- <img src="/assets/memes/sense-now.jpg" class="absolute w-55 top-17 left-135" /> -->
+
+<!--
+1. What?
+2. Gruppen
+3. Metadatenmodell:
+   * User
+   * Movie
+   * Genre
+   * Timeline
+4. Timelineelement: Bpm -> Werte in sich
+5. Timelineelement: Dynamic -> mit Enums
+6. gesamt -> verstanden
+-->
 
 ---
 
@@ -927,6 +958,8 @@ url: https://fmadb.org/
 ---
 
 # Mehr in meiner schriftlichen Arbeit
+
+//TODO Inhaltsverzeichnis
 
 ---
 
