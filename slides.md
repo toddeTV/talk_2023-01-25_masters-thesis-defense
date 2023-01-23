@@ -206,10 +206,47 @@ layout: two-cols
 -->
 
 ---
+
+<AppReferenceToWrittenWork :pages="['1.1.']" />
+
+# Warum gibt es solch große Korpusstudien noch nicht?
+
+<VClicks class="space-y-10 mt-15 text-xl">
+
+* <mdi-image-size-select-small class="baseColor mr-2" /> Umfang<br>
+  <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
+* <mdi-select-compare class="baseColor mr-2" /> Vergleichbarkeit<br>
+  <span class="text-sm ml-10">einheitliche Struktur bereitstellen</span>
+  
+</VClicks>
+
+<div v-click class="text-2xl text-center mt-11 text-gray-400">
+  <mdi-arrow-right class="mr-2 pt-1" />
+  <span class="line-through">Geht das nicht ohne einen Informatiker?</span>
+  <mdi-arrow-left class="ml-2 pt-1" />
+</div>
+
+<div v-after class="text-2xl text-center mt-1 baseColor">
+  <mdi-arrow-right class="mr-2 pt-1" />
+  <span>Wir brauchen die Informatik als Lösung!</span>
+  <mdi-arrow-left class="ml-2 pt-1" />
+</div>
+
+<!--
+* nur vereinzelte filmübergreifende Studien, da sehr komplex und umfangreich
+* Möglichkeit der Vereinheitlichung der Analysen filmübergreifend, da Film sehr individuell
+  * Pascal Rudolph "Präexistente Musik im Film" 2022 [?] sagt schon in seiner Einleitung, dass er ueberall anders
+    vorgehen musste
+* von anderen kann man nicht nutzen, daher immer wieder von vorne
+* Wie meine Recherche zeigte, gibt es momentan nichts hierfür //TODO grob als eigene Folie?
+* Das heisst, wir muessen da ran.
+-->
+
+---
 clicks: 5
 ---
 
-# Das Problem
+# Probleme & Lösungen
 
 <div class="relative">
 
@@ -230,13 +267,13 @@ clicks: 5
 
 ---
 
-# Das Problem
+# Probleme & Lösungen
 
 <AppAnalysisPipeline />
 
 <AppArrowUp :nbr="1" />
 
-<div class="px-3 flex flex-row">
+<div class="px-3 flex flex-row relative">
 
 <div class="w-45 mr-10 flex-shrink-0">
   <img src="/assets/movie-covers/tmdb-120.jpg" />
@@ -245,7 +282,7 @@ clicks: 5
   </div>
 </div>
 
-<VClicks class="text-lg">
+<VClicks class="text-lg pt-9">
 
 * Unterschiedliche Namen (Sprachen & Länder)
   * [ger] Der Herr der Ringe - Die Gefährten
@@ -258,17 +295,38 @@ clicks: 5
 
 </VClicks>
 
+<div class="w-full flex flex-row text-lg absolute left-56.5" v-click>
+  <mdi-check class="text-green-500 mr-2" />
+  Filme mit Metainformationen automatisch von
+  <img src="/assets/TMDB_Asset3.svg" class="h-2.5 mx-2 mt-2.5" />
+  crawlen
+</div>
+
+<div class="w-full text-lg absolute left-63.5 top-18 bg-white h-18" v-click>
+<mdi-check class="text-green-500" /> global nur Englische Titel durch crawlen nutzen
+</div>
+
+<div class="w-full text-lg absolute left-63.5 top-42.5 bg-white h-18" v-click>
+<mdi-check class="text-green-500" /> individuell vermerkbare Filmlänge durch Nutzer
+</div>
+
+<div class="w-full text-lg absolute left-63.5 top-67 bg-white" v-click>
+<mdi-check class="text-green-500" /> individuell vermerkbar durch Nutzer
+</div>
+
 </div>
 
 ---
 
-# Das Problem
+# Probleme & Lösungen
 
 <AppAnalysisPipeline />
 
 <AppArrowUp :nbr="2" />
 
-<VClicks class="px-3 text-lg">
+<div class="px-3 text-lg relative">
+
+<VClicks>
 
 * viele <mdi-exclamation-thick class="text-red-500" />
   * BPM, Time Signature, Dynamic, Scale, Effect, Cluster, Function, ...
@@ -282,24 +340,58 @@ clicks: 5
 
 </VClicks>
 
+<div class="w-full absolute top-9 left-8 bg-white" v-click>
+<mdi-check class="text-green-500" /> Fleißarbeit, aktuell nur grundlegende musiktheoretische Parameter
+</div>
+
+<div class="absolute top-3 right-4 border py-1 px-2 z-1" v-after>
+Kategorien:
+<ul>
+  <li>Musiktheoretische Parameter</li>
+  <li>Dramaturgische Parameter</li>
+  <li>Bildgestalterische Parameter</li>
+  <li>Drehbuchbezogene Parameter</li>
+  <li>Wahrnehmungs-Parameter</li>
+  <li>Sonstige Parameter</li>
+</ul>
+</div>
+
+<div class="w-full absolute top-25 left-8 bg-white h-18" v-click>
+<mdi-check class="text-green-500" /> festlegen und User ggf Freiraum ermöglichen
+</div>
+
+<div class="w-full absolute top-50 left-8 bg-white" v-click>
+<mdi-check class="text-green-500" /> festlegen und User ggf Terminologieänderungen ermöglichen
+</div>
+
+<div class="w-full absolute top-66 left-8 bg-white" v-click>
+<mdi-check class="text-green-500" /> Sonderfälle durch individuelle Lösungen abdecken
+</div>
+
+</div>
+
 <!--
 * viele Parameter, welche nehme ich, welche bringen mir etwas?
-* BPM:
-  * Accelerando = schneller werden
-  * Ritardando = langsamer werden
+* Analyseparameter unterteilt in:
+  * Musiktheoretischer Parameter
+  * Dramaturgische Parameter
+  * Bildgestalterische Parameter
+  * Drehbuchbezogene Parameter
+  * Wahrnehmungs-Parameter
+  * Sonstiger Parameter
 -->
 
 ---
-clicks: 5
+clicks: 6
 ---
 
-# Das Problem
+# Probleme & Lösungen
 
 <AppAnalysisPipeline />
 
 <AppArrowUp :nbr="3" />
 
-<div class="px-3 text-lg">
+<div class="px-3 text-lg relative">
 
 <table>
   <thead class="!font-bold">
@@ -339,18 +431,25 @@ clicks: 5
   </tbody>
 </table>
 
+<div class="absolute flex flex-row left-111 top-1.5 z-10" v-click="6">
+  <div class="border border-green-500 rounded-lg w-30 h-10 mr-2">
+  </div>
+  <mdi-check class="text-green-500 text-xl mt-1.5" />
+</div>
+
 </div>
 
 <!--
 * separat veröffentlichte Soundtracks weichen von Filmen ab
 * Doch wie visualisieren während der Analysen und der Eingaben der Daten?
+* Rechtliche Probleme!
 -->
 
 ---
-clicks: 4
+clicks: 6
 ---
 
-# Das Problem
+# Probleme & Lösungen
 
 <AppAnalysisPipeline />
 
@@ -359,11 +458,21 @@ clicks: 4
 <table class="-mt-4 -mb-5">
   <thead class="!font-bold">
     <tr>
-      <td v-click="1" class="w-1/2 border-r-1">
-        Tabellarisch
+      <td class="w-1/2 border-r-1">
+        <div v-click="1">
+          Tabellarisch
+        </div>
+        <div class="text-gray-400 font-normal" v-click="1">
+          mit Varianten:
+        </div>
       </td>
-      <td v-click="4" class="align-top">
-        Andere Darstellungsarten?
+      <td class="align-top">
+        <div v-click="4">
+          Zeitleiste
+        </div>
+        <div class="text-gray-400 font-normal" v-click="5">
+          mit Zeitleistenelementtypen:
+        </div>
       </td>
     </tr>
   </thead>
@@ -396,25 +505,30 @@ clicks: 4
   </tbody>
 </table>
 
-<img src="/assets/parameter-example-tables/2_one-table-with-overlap.png"
-     v-click="3"
-     class="animImg2 absolute bottom-40 left-20 z-10" />
-<img src="/assets/parameter-example-tables/3_multiple-tables-per-parameter.png"
-     v-click="3"
-     class="animImg2 absolute bottom-10 left-21 z-10" />
-<!-- <div v-click="3"
-     class="absolute top-0 left-0 w-full h-full bg-white/75 z-1"></div> -->
-<div v-click="3"
-     class="absolute top-75 left-0 w-127 h-25 bg-white z-1"></div>
-<div v-click="3"
-     class="absolute top-109 left-0 w-127 h-18 bg-white z-1"></div>
-<div v-click="3"
-     class="absolute top-99 left-30 w-127 h-18 bg-white z-1"></div>
+<AppBiggerPresentationTables />
+
+<div class="absolute top-59 left-130" v-click="5">
+  <div class="mb-3">1. Ein Wert, sequentiell (z.B. BPM, dynamic, root)</div>
+  <div class="mb-3">2. Mehrere Werte, sequentiell (als 3 darstellen)</div>
+  <div class="mb-3">3. Ein Wert, parallel (z.B. Orchestration)</div>
+  <div class="mb-3">4. Mehrere Werte, parallel (als 3 darstellen)</div>
+</div>
+
+<!-- <div class="flex flex-row">
+  <mdi-check class="text-green-500" />
+  <span class="font-bold mx-1.5">Timeline</span>
+  als Visualisierung mit Eingabehilfe
+</div> -->
+
+<div class="absolute top-90 left-135" v-click="6">
+  <img src="/assets/miniTimeline.svg" class="w-95" />
+</div>
 
 <!--
-* Connectoren Bezeichnungen:
-  * bei Bpm `Accelerando` & `Ritardando`
-  * bei Dynamic `Crescendo` & `Decrescendo`
+* Wort `Auswertung` hier etwas irreführend, da nun zweierlei gemeint ist:
+  * leichte Eingabe mit Visualisierung
+  * Evaluation als Erkenntnissgewinn nach Dateneingabe
+* Das wird in FMADB `Timeline` genannt
 -->
 
 ---
@@ -431,332 +545,6 @@ clicks: 4
 * Tabellen oder Diagramme miteinander vergleichen
 
 </VClicks>
-
----
-
-# Das Problem
-
-<AppAnalysisPipeline />
-
-<AppArrowUp :nbr="6" />
-
-<VClicks class="space-y-2 text-xl px-3">
-
-* anderen zeigen und sich freuen 😊
-
-</VClicks>
-
----
-
-<AppReferenceToWrittenWork :pages="['1.1.']" />
-
-# Warum gibt es solch große Korpusstudien noch nicht?
-
-<VClicks class="space-y-10 mt-15 text-xl">
-
-* <mdi-image-size-select-small class="baseColor mr-2" /> Umfang<br>
-  <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
-* <mdi-select-compare class="baseColor mr-2" /> Vergleichbarkeit<br>
-  <span class="text-sm ml-10">einheitliche Struktur bereitstellen</span>
-  
-</VClicks>
-
-<div v-click class="text-2xl text-center mt-11 text-gray-400">
-  <mdi-arrow-right class="mr-2 pt-1" />
-  <span class="line-through">Geht das nicht ohne einen Informatiker?</span>
-  <mdi-arrow-left class="ml-2 pt-1" />
-</div>
-
-<div v-after class="text-2xl text-center mt-1 baseColor">
-  <mdi-arrow-right class="mr-2 pt-1" />
-  <span>Wir brauchen die Informatik als Lösung!</span>
-  <mdi-arrow-left class="ml-2 pt-1" />
-</div>
-
-<!--
-* nur vereinzelte filmübergreifende Studien, da sehr komplex und umfangreich
-* Möglichkeit der Vereinheitlichung der Analysen filmübergreifend, da Film sehr individuell
-  * Pascal Rudolph "Präexistente Musik im Film" 2022 [?] sagt schon in seiner Einleitung, dass er ueberall anders
-    vorgehen musste
-* von anderen kann man nicht nutzen, daher immer wieder von vorne
-* Wie meine Recherche zeigte, gibt es momentan nichts hierfür //TODO grob als eigene Folie?
-* Das heisst, wir muessen da ran.
--->
-
----
-
-# Die Lösung: FMADB
-
-<AppAnalysisPipeline />
-
-<AppArrowUp :nbr="1" />
-
-<div class="px-3 flex flex-row relative">
-
-<div class="w-45 mr-10 flex-shrink-0">
-  <img src="/assets/movie-covers/tmdb-120.jpg" />
-  <div class="text-right text-xs">
-    &copy; themoviedb.org
-  </div>
-</div>
-
-<div class="text-lg text-gray-400 pt-9">
-
-* Unterschiedliche Namen (Sprachen & Länder)
-  * [ger] Der Herr der Ringe - Die Gefährten
-  * [eng] The Lord of the Rings: The Fellowship of the Ring
-* Unterschiedliche Längen zwischen und innerhalb Länder
-  * Kinofassung: 171 Minuten
-  * Extended Edition: 218 Minuten
-* Medium (Konvertierung & Kompression)
-  * DVD, Netflix, Amazon Prime, ...
-
-</div>
-
-<div class="w-full flex flex-row text-lg absolute left-56.5" v-click>
-  <mdi-check class="text-green-500 mr-2" />
-  Filme mit Metainformationen automatisch von
-  <img src="/assets/TMDB_Asset3.svg" class="h-2.5 mx-2 mt-2.5" />
-  crawlen
-</div>
-
-<div class="w-full text-lg absolute left-63.5 top-18 bg-white h-18" v-click>
-<mdi-check class="text-green-500" /> global nur Englische Titel durch crawlen nutzen
-</div>
-
-<div class="w-full text-lg absolute left-63.5 top-42.5 bg-white h-18" v-click>
-<mdi-check class="text-green-500" /> individuell vermerkbare Filmlänge durch Nutzer
-</div>
-
-<div class="w-full text-lg absolute left-63.5 top-67 bg-white" v-click>
-<mdi-check class="text-green-500" /> individuell vermerkbar durch Nutzer
-</div>
-
-</div>
-
----
-
-# Die Lösung: FMADB
-
-<AppAnalysisPipeline />
-
-<AppArrowUp :nbr="2" />
-
-<div class="px-3 text-lg relative">
-
-<div class="text-gray-400">
-
-* viele <mdi-exclamation-thick class="text-red-500" />
-  * BPM, Time Signature, Dynamic, Scale, Effect, Cluster, Function, ...
-* unterschiedliche Herangehensweisen für gleiche Parameter
-  * Hansjörg Pauli definiert 3 Funktionen von Filmmusik
-  * Norbert Jürgen Schneider definiert 20 Funktionen von Filmmusik
-* unterschiedliche Bezeichnungen für gleiche Parameter
-  * Diegetische Musik == Inzidenzmusik == Source-Musik
-* Parameter sind verschieden und facettenreich
-  * z.B. BPM nicht nur reine Zahlen (Accelerando, Unbekannt, ...)
-
-</div>
-
-<div class="w-full absolute top-9 left-8 bg-white" v-click>
-<mdi-check class="text-green-500" /> Fleißarbeit, aktuell nur grundlegende musiktheoretische Parameter
-</div>
-
-<div class="absolute top-3 right-4 border py-1 px-2 z-1" v-after>
-Kategorien:
-<ul>
-  <li>Musiktheoretische Parameter</li>
-  <li>Dramaturgische Parameter</li>
-  <li>Bildgestalterische Parameter</li>
-  <li>Drehbuchbezogene Parameter</li>
-  <li>Wahrnehmungs-Parameter</li>
-  <li>Sonstige Parameter</li>
-</ul>
-</div>
-
-<div class="w-full absolute top-25 left-8 bg-white h-18" v-click>
-<mdi-check class="text-green-500" /> festlegen und User ggf Freiraum ermöglichen
-</div>
-
-<div class="w-full absolute top-50 left-8 bg-white" v-click>
-<mdi-check class="text-green-500" /> festlegen und User ggf Terminologieänderungen ermöglichen
-</div>
-
-<div class="w-full absolute top-66 left-8 bg-white" v-click>
-<mdi-check class="text-green-500" /> Sonderfälle durch individuelle Lösungen abdecken
-</div>
-
-</div>
-
-<!--
-* Analyseparameter unterteilt in:
-  * Musiktheoretischer Parameter
-  * Dramaturgische Parameter
-  * Bildgestalterische Parameter
-  * Drehbuchbezogene Parameter
-  * Wahrnehmungs-Parameter
-  * Sonstiger Parameter
--->
-
----
-
-# Die Lösung: FMADB
-
-<AppAnalysisPipeline />
-
-<AppArrowUp :nbr="3" />
-
-<div class="px-3 text-lg relative">
-
-<table class="text-gray-400">
-  <thead class="!font-bold">
-    <tr>
-      <td class="w-1/2 border-r-1">
-        Computergestützt<br>
-        <ul class="font-normal">
-          <li>Audiospuren</li>
-          <li class="-mt-2">Musiknoten</li>
-        </ul>
-      </td>
-      <td class="align-top">
-        Händisch
-      </td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border-r-1">
-        Audiospur direkt technisch schwer, da Musik, Effekten und Sprache gemischt
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td class="border-r-1">
-        Rechtliches Problem bei direkter Verwendung
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="text-center">
-        Notenmaterial selten vorhanden
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="absolute flex flex-row left-111 top-1 z-10" v-click>
-  <div class="border border-green-500 rounded-lg w-30 h-10 mr-2">
-  </div>
-  <mdi-check class="text-green-500 text-xl mt-1.5" />
-</div>
-
-<div class="bg-white absolute h-55 w-113 top-4.5 left-0" v-after></div>
-
-</div>
-
-<!--
-* Rechtliche Probleme!
--->
-
----
-
-# Die Lösung: FMADB
-
-<AppAnalysisPipeline />
-
-<AppArrowUp :nbr="4" />
-
-<table class="-mt-4 -mb-5">
-  <thead class="!font-bold">
-    <tr>
-      <td class="w-1/2 border-r-1 text-gray-400">
-        Tabellarisch
-      </td>
-      <td class="align-top relative">
-        <div class="text-gray-400" v-click-hide>
-          Andere Darstellungsarten?
-        </div>
-        <div class="absolute left-2 top-3" v-after>
-          Zeitleiste
-        </div>
-        <div class="absolute left-25 top-3 font-normal" v-click>
-          mit Zeitleistenelementtypen:
-        </div>
-      </td>
-    </tr>
-  </thead>
-  <tbody class="text-gray-400">
-    <tr class="!border-b-0">
-      <td class="border-r-1">
-        1. Eine Tabelle mit überlappenden Zeitintervallen
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr class="!border-b-0">
-      <td class="border-r-1">
-        2. Eine Tabelle mit nicht überlappenden Zeitintervallen<br>
-        <img src="/assets/parameter-example-tables/2_one-table-with-overlap_small.png"
-             class="mt-1 w-90 animImg1 opacity-80" />
-      </td>
-      <td>
-      </td>
-    </tr>
-    <tr class="!border-b-0">
-      <td class="border-r-1">
-        3. Mehrere Tabellen, eine pro Parameter<br>
-        <img src="/assets/parameter-example-tables/3_multiple-tables-per-parameter_small.png"
-             class="mt-1 animImg1 opacity-80" />
-      </td>
-      <td>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="absolute top-59 left-130">
-  <div class="mb-3">1. Ein Wert, sequentiell (z.B. BPM, dynamic, root)</div>
-  <div class="mb-3">2. Mehrere Werte, sequentiell (als 3 darstellen)</div>
-  <div class="mb-3">3. Ein Wert, parallel (z.B. Orchestration)</div>
-  <div class="mb-3">4. Mehrere Werte, parallel (als 3 darstellen)</div>
-</div>
-
-<!-- <div class="flex flex-row">
-  <mdi-check class="text-green-500" />
-  <span class="font-bold mx-1.5">Timeline</span>
-  als Visualisierung mit Eingabehilfe
-</div> -->
-
-<div class="absolute top-90 left-135">
-  <img src="/assets/miniTimeline.svg" class="w-95" />
-</div>
-
-<!--
-* Wort `Auswertung` hier etwas irreführend, da nun zweierlei gemeint ist:
-  * leichte Eingabe mit Visualisierung
-  * Evaluation als Erkenntnissgewinn nach Dateneingabe
-* Das wird in FMADB `Timeline` genannt
-* Connectoren Bezeichnungen:
-  * bei Bpm `Accelerando` & `Ritardando`
-  * bei Dynamic `Crescendo` & `Decrescendo`
--->
-
----
-
-# Das Problem
-
-<AppAnalysisPipeline />
-
-<AppArrowUp :nbr="5" />
-
-<div class="px-3 text-lg space-y-2 text-gray-400">
-
-* Schön wären Diagramme
-* Tabellen oder Diagramme miteinander vergleichen
-
-</div>
 
 <div class="w-full flex flex-row justify-between mt-2" v-click>
   <img src="/assets/miniTimeline.svg" class="flex-shrink-0 h-40" />
@@ -782,20 +570,20 @@ Kategorien:
 
 ---
 
-# Die Lösung: FMADB
+# Probleme & Lösungen
 
 <AppAnalysisPipeline />
 
 <AppArrowUp :nbr="6" />
 
-<div class="space-y-2 text-xl px-3 text-gray-400">
+<div class="space-y-2 text-xl px-3">
 
-* anderen zeigen und sich freuen 😊
+* Anderen zeigen und sich freuen
 
 </div>
 
 <div class="space-y-2 text-xl pl-10 pt-3" v-click>
-  <mdi-check class="text-green-500" /> anderen umfangreicheres zeigen und sich noch mehr freuen 🤩
+  <mdi-check class="text-green-500" /> Umfangreichere Korpusstudien möglich 🤩
 </div>
 
 ---
