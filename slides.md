@@ -5,7 +5,7 @@ themeConfig:
   primary: '#3b82f6'
   showTotalPageCount: false
   showPageProcessBar: true
-  literatureSlideNumber: 30
+  literatureSlideNumber: 25
 title: Talk 2023-01-25 - master's thesis defense
 author:
   name: Thorsten Seyschab
@@ -752,6 +752,48 @@ clicks: 7
 ---
 
 # Entwicklung des Timeline-Ansatzes
+
+<div class="flex flex-row justify-between">
+  <div class="w-20/41" v-click>
+    <div class="mb-3">
+      Erster Ansatz: Div Container
+    </div>
+    <div class="h-60">
+      <img src="/assets/timeline-development/Countdown_old.png" />
+    </div>
+    <div class="flex flex-col space-y-2">
+      <div><mdi-plus class="text-green-600 mr-2" />Dynamische Höhe pro Zeile</div>
+      <div><mdi-minus class="text-red-600 mr-2" />Horizontales Scrollen ohne Offset (Rücksprünge)</div>
+      <div><mdi-minus class="text-red-600 mr-2" />Zoomen extern mit Faktor und Positionsverlust</div>
+      <div><mdi-minus class="text-red-600 mr-2" />Keine relativen Zeiten bei Klicken in eine Zeile</div>
+    </div>
+  </div>
+  <div class="w-20/41" v-click>
+    <div class="mb-2">
+      Zweiter Ansatz: Apache eCharts
+    </div>
+    <div class="h-60">
+      <img src="/assets/timeline-development/Countdown_new.png" />
+    </div>
+    <div class="flex flex-col space-y-2">
+      <div><mdi-minus class="text-red-600 mr-2" />Keine dynamische Höhe pro Zeile</div>
+      <div><mdi-plus class="text-green-600 mr-2" />Horizontales Scrollen und Zoom kontrollierbar</div>
+      <div><mdi-plus class="text-green-600 mr-2" />Position bleibt bei Datenänderungen und Zoom</div>
+      <div><mdi-plus class="text-green-600 mr-2" />Relativen Zeiten bei Klicken in eine Zeile</div>
+    </div>
+  </div>
+</div>
+
+<div class="text-xs mt-4 text-right text-gray-400">
+  &copy;
+  <a href="https://fmadb.org/movie/one/cl8bmhyu7568250soulp89d9bt/cl8bmiy01570540souzehyq8xb" target="_blank">
+  https://fmadb.org/movie/one/cl8bmhyu7568250soulp89d9bt/cl8bmiy01570540souzehyq8xb
+  </a>
+</div>
+
+<!--
+* echte Daten des Films `Countdown`
+-->
 
 ---
 
