@@ -5,6 +5,7 @@ themeConfig:
   primary: '#3b82f6'
   showTotalPageCount: false
   showPageProcessBar: true
+  literatureSlideNumber: 27
 title: Talk 2023-01-25 - master's thesis defense
 author:
   name: Thorsten Seyschab

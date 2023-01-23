@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <Link to="25">
+  <Link :to="$slidev.configs.themeConfig.literatureSlideNumber">
     <slot />
   </Link>
 </template>

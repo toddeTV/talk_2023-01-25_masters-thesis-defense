@@ -33,12 +33,11 @@ const left = computed<number>(() => {
       <!-- TailwindCSS gray-100 = #f3f4f6 -->
       <!-- TailwindCSS gray-200 = #e5e7eb -->
       <!-- TailwindCSS gray-400 = #9ca3af -->
-      <svg width="100" height="45" class="-mb-0.5 z-10">
-        <polygon points="35,5 70,50 0,50" style="fill:#e5e7eb;stroke:#9ca3af;stroke-width:2" />
-        <!-- <rect width="200" height="2" x="0" y="99" style="fill:red;stroke-width:0" /> -->
+      <svg width="100" height="30" class="-mb-0.5 z-10">
+        <polygon points="30,5 60,50 0,50" style="fill:#e5e7eb;stroke:#9ca3af;stroke-width:2" />
       </svg>
     </div>
-    <div class="border-t-2 border-gray-400 h-7 pb-1 bg-gradient-to-b from-gray-200 to-white -mb-2">
+    <div class="border-t-2 border-gray-400 h-6 pb-1 bg-gradient-to-b from-gray-200 to-white -mb-2">
     </div>
   </div>
 </template>
