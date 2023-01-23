@@ -28,7 +28,7 @@ const pageProcess = computed(() => {
     </div>
 
     <!-- progress bar -->
-    <div v-if="$slidev.configs.themeConfig.showPageProcessBar" class="absolute bottom-0 left-0 w-full">
+    <div v-if="$slidev.configs.themeConfig.showPageProcessBar" class="absolute bottom-0 left-0 w-full z-20">
       <div class="w-full h-2">
         <div class="processColor h-2" :style="'width: '+pageProcess+'%'"></div>
       </div>

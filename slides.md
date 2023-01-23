@@ -48,6 +48,8 @@ drawings:
   syncAll: false
 ---
 
+<AppReferenceToWrittenWork :pages="['3.2.']" v-click />
+
 <AppIntroLogoFullscreen />
 
 <!--
@@ -56,6 +58,7 @@ drawings:
 * Gäste, die nicht vom Fach sind, sind heute hier -> daher 
 * Ich stelle hier eine Übersicht meiner Arbeit und der Ergebnisse dieser vor. Tiefergehende Informationen gerne bei
   Bedarf am Ende erfragen. Zeit aber einfach zu knapp, die rund 120 Seiten meiner Arbeit in 30 Minuten vorzustellen.
+* Oben rechts Flagge für Kapitelreferenz auf schriftliche Arbeit -> wie hier, da der Name `FMADB` diesem Kapitel entstammt
 -->
 
 ---
@@ -138,6 +141,8 @@ layout: two-cols
 
 ---
 
+<AppReferenceToWrittenWork :pages="['1.1.', '1.2.']" />
+
 # Motivation
 
 <VClicks class="space-y-2 text-xl">
@@ -165,6 +170,8 @@ layout: two-cols
 -->
 
 ---
+
+<AppReferenceToWrittenWork :pages="['1.1.', '2.3.', '2.4.']" />
 
 <div class="flex flex-row">
   <h1>Verwandte Arbeiten</h1>
@@ -440,6 +447,8 @@ clicks: 4
 </VClicks>
 
 ---
+
+<AppReferenceToWrittenWork :pages="['1.1.']" />
 
 # Warum gibt es solch große Korpusstudien noch nicht?
 
@@ -791,6 +800,8 @@ Kategorien:
 
 ---
 
+<AppReferenceToWrittenWork :pages="['4.']" />
+
 # Ecosystem
 
 <div class="absolute top-12 right-19">
@@ -923,6 +934,9 @@ url: https://fmadb.org/
 ---
 clicks: 7
 ---
+
+<AppReferenceToWrittenWork :pages="['3.6.']" />
+
 # Datenmodell
 
 <AppDatamodel />
@@ -953,9 +967,9 @@ clicks: 7
 
 ---
 
-# Abweichungen zur Arbeit
+<AppReferenceToWrittenWork :pages="['6.3.']" />
 
-//TODO das ist aus Kapitel `6.3. Ausblick`
+# Abweichungen zur Arbeit
 
 <VClicks class="space-y-2 text-xl">
 
