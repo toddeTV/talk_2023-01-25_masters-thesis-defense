@@ -5,7 +5,7 @@ themeConfig:
   primary: '#3b82f6'
   showTotalPageCount: false
   showPageProcessBar: true
-  literatureSlideNumber: 27
+  literatureSlideNumber: 30
 title: Talk 2023-01-25 - master's thesis defense
 author:
   name: Thorsten Seyschab
@@ -183,7 +183,9 @@ layout: two-cols
   * <span class="text-gray-400 text-sm">Pascal Rudolph zu 12 Filmen [<AppLiteratureHyperlink>Rud22</AppLiteratureHyperlink>]</span>
   * <span class="text-gray-400 text-sm">Philip Kümpel zu verschiedenen zufällig ausgewählten Filmen [<AppLiteratureHyperlink>Küm19</AppLiteratureHyperlink>]</span>
 * Filmübergreifende vollständige Analysen:
-  * <span class="text-red-500">?</span>
+  * <div class="w-full bg-red-600 rounded-lg text-white text-xl flex flex-row justify-center">
+      ? ? ?
+    </div>
 
 </VClicks>
 
@@ -887,9 +889,25 @@ Kategorien:
 </div>
 
 ---
-
-Live Demo Anwendung & Dokumentation
-
+layout: iframe
+url: https://fmadb.org/
+---
+<!--  -->
+---
+layout: iframe
+url: https://docs.fmadb.org/
+---
+<!--  -->
+---
+layout: iframe
+url: https://www.themoviedb.org/
+---
+<!--  -->
+---
+layout: iframe
+url: https://fmadb.org/
+---
+<!--  -->
 ---
 
 # Backend Modell
@@ -914,6 +932,71 @@ Live Demo Anwendung & Dokumentation
 
 # Literatur
 
+<div class="flex flex-row mb-4">
+  <div class="w-25 flex-shrink-0 flex-grow-0">
+    [MC88]
+  </div>
+  <div class="text-justify">
+    Sandra K Marshall und Annabel J Cohen. "Effects of musical soundtracks on attitudes
+    toward animated geometric figures". Englisch. In: <span class="italic">Music perception</span> 6.1 (1988), S. 95–
+    112. DOI:
+    <a href="https://doi.org/10.2307/40285417" target="_blank">https://doi.org/10.2307/40285417</a>.
+  </div>
+</div>
+
+<div class="flex flex-row mb-4">
+  <div class="w-25 flex-shrink-0 flex-grow-0">
+    [Hoe11]
+  </div>
+  <div class="text-justify">
+    Berthold Hoeckner u. a. "Film music influences how viewers relate to movie characters."
+    In: <span class="italic">Psychology of Aesthetics, Creativity, and the Arts</span> 5.2 (2011), S. 146. DOI:
+    <a href="https://psycnet.apa.org/doi/10.1037/a0021544" target="_blank">https://psycnet.apa.org/doi/10.1037/a0021544</a>.
+  </div>
+</div>
+
+<div class="flex flex-row mb-4">
+  <div class="w-25 flex-shrink-0 flex-grow-0">
+    [Coh]
+  </div>
+  <div class="text-justify">
+    AJ Cohen. "How music influences the interpretation of film and video: approaches
+    from experimental psychology. RA Kendall & RWH Savage". In: <span class="italic">Perspectives in Systematic
+    Musicology</span>, S. 15–36.
+  </div>
+</div>
+
+<div class="flex flex-row mb-4">
+  <div class="w-25 flex-shrink-0 flex-grow-0">
+    [Fin06]
+  </div>
+  <div class="text-justify">
+    Nathan Fink. "The sound of suspense: An analysis of music in Alfred Hitchcock films".
+    In: <span class="italic">Proceedings of the 9th International Conference on Music Perception and Cognition</span>
+    (<span class="italic">ICMPC9</span>). Citeseer. 2006, S. 193–198. DOI:
+    <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.610.738&rep=rep1&type=pdf" target="_blank">
+      https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.610.738&rep=rep1&type=pdf</a>.
+  </div>
+</div>
+
+<div class="flex flex-row mb-4">
+  <div class="w-25 flex-shrink-0 flex-grow-0">
+    [Rud22]
+  </div>
+  <div class="text-justify">
+    Pascal Rudolph. "Präexistente Musik im Film: Klangwelten im Kino des Lars von Trier". In: (2022).
+  </div>
+</div>
+
+<div class="flex flex-row mb-4">
+  <div class="w-25 flex-shrink-0 flex-grow-0">
+    [Küm19]
+  </div>
+  <div class="text-justify">
+    Philipp Kümpel. <span class="italic">Filmmusik in der Praxis: komponieren, produzieren, verkaufen.</span> PPVMedien, 2019.
+  </div>
+</div>
+
 ---
 
-Schlussfolie
+<AppIntroLogoWithInformation />
