@@ -717,8 +717,8 @@ Kategorien:
   als Visualisierung mit Eingabehilfe
 </div> -->
 
-<div class="absolute top-90 left-130">
-  <img src="/assets/miniTimeline.svg" class="w-110" />
+<div class="absolute top-90 left-135">
+  <img src="/assets/miniTimeline.svg" class="w-95" />
 </div>
 
 <!--
@@ -746,15 +746,27 @@ Kategorien:
 
 </div>
 
-<VClicks class="px-3 text-lg space-y-2">
+<div class="w-full flex flex-row justify-between mt-2" v-click>
+  <img src="/assets/miniTimeline.svg" class="flex-shrink-0 h-40" />
+  <img src="/assets/evaluation-examples/bpm.svg" class="flex-shrink-0 h-38" />
+  <img src="/assets/evaluation-examples/dynamic.svg" class="flex-shrink-0 h-38" />
+</div>
 
-* Evaluationstypen
-  * 1. Auswertung einzelner Zeitleisten einzelner Filme
-  * 2. Auswertung mehrerer Zeitleisten des gleichen Films
-  * 3. Auswertung mehrerer Filme repräsentiert durch je eine Zeitleiste pro Film
-  * 4. Allgemeine Auswertung der enthaltenen Daten in FMADB
-
-</VClicks>
+<ul class="absolute top-108 left-17 text-lg space-y-2" v-click>
+  <li>
+    <div class="flex flex-row">
+      <div>
+        Evaluationstypen
+      </div>
+      <div class="flex flex-col ml-6">
+        <div>1. Auswertung einzelner Zeitleisten einzelner Filme</div>
+        <div>2. Auswertung mehrerer Zeitleisten des gleichen Films</div>
+        <div>3. Auswertung mehrerer Filme repräsentiert durch je eine Zeitleiste pro Film</div>
+        <div>4. Allgemeine Auswertung der enthaltenen Daten in FMADB</div>
+      </div>
+    </div>
+  </li>
+</ul>
 
 ---
 
