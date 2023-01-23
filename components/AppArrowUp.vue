@@ -1,14 +1,35 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 const props = defineProps({
-  left: {
+  // left: {
+  //   default: 0,
+  // },
+  nbr: {
     default: 0,
   },
+})
+
+const left = computed<number>(() => {
+  if(props.nbr === 1)
+    return 60
+  if(props.nbr === 2)
+    return 171
+  if(props.nbr === 3)
+    return 302
+  if(props.nbr === 4)
+    return 435
+  if(props.nbr === 5)
+    return 590
+  if(props.nbr === 6)
+    return 740
+  return 0
 })
 </script>
 
 <template>
   <div>
-    <div class="mt-1" :style="'margin-left:'+props.left+'px;'">
+    <div class="mt-1" :style="'margin-left:'+left+'px;'">
       <!-- TailwindCSS gray-100 = #f3f4f6 -->
       <!-- TailwindCSS gray-200 = #e5e7eb -->
       <!-- TailwindCSS gray-400 = #9ca3af -->

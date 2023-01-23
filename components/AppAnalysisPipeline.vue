@@ -26,9 +26,12 @@ const additionalClass = computed(() => {
   <div :class="['transition-all duration-700 flex flex-row justify-center text-xl', additionalClass]">
     <span>Film</span>
     <span class="mx-3"><mdi-arrow-right-thick /></span>
-    <span>Parameter definieren</span>
+    <!-- <span>Parameter definieren</span> -->
+    <span>Parameter</span>
     <span class="mx-3"><mdi-arrow-right-thick /></span>
     <span>Analyse</span>
+    <span class="mx-3"><mdi-arrow-right-thick /></span>
+    <span>Darstellung</span>
     <span class="mx-3"><mdi-arrow-right-thick /></span>
     <span>Auswertung</span>
     <span class="mx-3"><mdi-arrow-right-thick /></span>

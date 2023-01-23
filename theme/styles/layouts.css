@@ -90,3 +90,17 @@
   }
 }
 
+
+
+/* special presentation styles, mostly animations */
+
+/* .slidev-page-10,
+.slidev-layout.my-custom-layout {
+  .animImg1.slidev-vclick-target {
+    transition: all 500ms ease;
+  }
+
+  .animImg1.slidev-vclick-hidden {
+    transform: scale(0);
+  }
+} */

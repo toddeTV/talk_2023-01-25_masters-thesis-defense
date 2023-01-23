@@ -196,17 +196,21 @@ layout: two-cols
 -->
 
 ---
-clicks: 4
+clicks: 5
 ---
 
 # Das Problem
 
-<AppAnalysisPipeline :animation="4" />
+<div class="relative">
 
-<div class="absolute bg-white w-60 h-20 top-68 left-50" v-click-hide></div>
-<div class="absolute bg-white w-30 h-20 top-68 left-110" v-click-hide></div>
-<div class="absolute bg-white w-38 h-20 top-68 left-140" v-click-hide></div>
-<!-- <div class="absolute bg-white w-60 h-20 top-68 left-178" v-click-hide></div> -->
+<AppAnalysisPipeline :animation="5" />
+
+<div class="absolute bg-white w-35 h-full top-0 left-30" v-click-hide></div>
+<div class="absolute bg-white w-30 h-full top-0 left-65" v-click-hide></div>
+<div class="absolute bg-white w-37 h-full top-0 left-95" v-click-hide></div>
+<div class="absolute bg-white w-39 h-full top-0 left-132" v-click-hide></div>
+
+</div>
 
 <!--
 * Am Anfang stehen viele Filme ...
@@ -220,7 +224,7 @@ clicks: 4
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="87" />
+<AppArrowUp :nbr="1" />
 
 <div class="px-3 flex flex-row">
 
@@ -252,7 +256,7 @@ clicks: 4
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="247" />
+<AppArrowUp :nbr="2" />
 
 <VClicks class="px-3 text-lg">
 
@@ -283,7 +287,7 @@ clicks: 5
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="424" />
+<AppArrowUp :nbr="3" />
 
 <div class="px-3 text-lg">
 
@@ -329,6 +333,78 @@ clicks: 5
 
 <!--
 * separat veröffentlichte Soundtracks weichen von Filmen ab
+* Doch wie visualisieren während der Analysen und der Eingaben der Daten?
+-->
+
+---
+clicks: 4
+---
+
+# Das Problem
+
+<AppAnalysisPipeline />
+
+<AppArrowUp :nbr="4" />
+
+<table class="-mt-4 -mb-5">
+  <thead class="!font-bold">
+    <tr>
+      <td v-click="1" class="w-1/2 border-r-1">
+        Tabellarisch
+      </td>
+      <td v-click="4" class="align-top">
+        Andere Darstellungsarten?
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-click="1">
+      <td class="border-r-1">
+        1. Eine Tabelle mit überlappenden Zeitintervallen
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr v-click="1">
+      <td class="border-r-1">
+        2. Eine Tabelle mit nicht überlappenden Zeitintervallen<br>
+        <img src="/assets/parameter-example-tables/2_one-table-with-overlap_small.png"
+             class="mt-1 w-90 animImg1" v-click="2" />
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr v-click="1" class="!border-b-0">
+      <td class="border-r-1">
+        3. Mehrere Tabellen, eine pro Parameter<br>
+        <img src="/assets/parameter-example-tables/3_multiple-tables-per-parameter_small.png"
+             class="mt-1 animImg1" v-click="2" />
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<img src="/assets/parameter-example-tables/2_one-table-with-overlap.png"
+     v-click="3"
+     class="animImg2 absolute bottom-40 left-20 z-10" />
+<img src="/assets/parameter-example-tables/3_multiple-tables-per-parameter.png"
+     v-click="3"
+     class="animImg2 absolute bottom-10 left-21 z-10" />
+<!-- <div v-click="3"
+     class="absolute top-0 left-0 w-full h-full bg-white/75 z-1"></div> -->
+<div v-click="3"
+     class="absolute top-75 left-0 w-127 h-25 bg-white z-1"></div>
+<div v-click="3"
+     class="absolute top-109 left-0 w-127 h-18 bg-white z-1"></div>
+<div v-click="3"
+     class="absolute top-99 left-30 w-127 h-18 bg-white z-1"></div>
+
+<!--
+* Connectoren Bezeichnungen:
+  * bei Bpm `Accelerando` & `Ritardando`
+  * bei Dynamic `Crescendo` & `Decrescendo`
 -->
 
 ---
@@ -337,14 +413,10 @@ clicks: 5
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="558" />
+<AppArrowUp :nbr="5" />
 
 <VClicks class="px-3 text-lg space-y-2">
 
-* Abhängig von der Speicherung der Analysen
-  * Eine Tabelle für alle Parameter?
-  * Pro Parameter eine Tabelle?
-  * Andere Repräsentation statt Tabellen?
 * Schön wären Diagramme
 * Tabellen oder Diagramme miteinander vergleichen
 
@@ -356,7 +428,7 @@ clicks: 5
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="715" />
+<AppArrowUp :nbr="6" />
 
 <VClicks class="space-y-2 text-xl px-3">
 
@@ -405,7 +477,7 @@ clicks: 5
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="87" />
+<AppArrowUp :nbr="1" />
 
 <div class="px-3 flex flex-row relative">
 
@@ -456,7 +528,7 @@ clicks: 5
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="247" />
+<AppArrowUp :nbr="2" />
 
 <div class="px-3 text-lg relative">
 
@@ -508,7 +580,7 @@ clicks: 5
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="424" />
+<AppArrowUp :nbr="3" />
 
 <div class="px-3 text-lg relative">
 
@@ -576,7 +648,7 @@ Auswertung
 
 <AppAnalysisPipeline />
 
-<AppArrowUp :left="715" />
+<AppArrowUp :nbr="6" />
 
 <div class="space-y-2 text-xl px-3 text-gray-400">
 
