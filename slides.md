@@ -53,11 +53,14 @@ drawings:
 <AppIntroLogoFullscreen />
 
 <!--
-* Begrüßung zu meiner Verteidigung, welche ein 30 min Vortrag mit anschließenden 30 min Fragen ist.
-* Fragen bitte notieren und am Ende stellen.
-* Gäste, die nicht vom Fach sind, sind heute hier -> daher 
-* Ich stelle hier eine Übersicht meiner Arbeit und der Ergebnisse dieser vor. Tiefergehende Informationen gerne bei
-  Bedarf am Ende erfragen. Zeit aber einfach zu knapp, die rund 120 Seiten meiner Arbeit in 30 Minuten vorzustellen.
+* Begrüßung zu MA Verteidigung -> zahlreich erschienen
+* 30 min Vortrag
+  * Übersicht meiner Arbeit und der Ergebnisse
+  * Zeit knapp, die rund 120 Seiten komplett vorzustellen
+  * Fragen bitte notieren und am Ende stellen.
+  * Gäste, die nicht vom Fach sind, sind heute hier
+* 30 min Fragen & Diskussion
+  * Tiefergehende Informationen bei Interesse
 * Oben rechts Flagge für Kapitelreferenz auf schriftliche Arbeit -> wie hier, da der Name `FMADB` diesem Kapitel entstammt
 -->
 
@@ -91,10 +94,14 @@ layout: two-cols
 <!-- * <mdi-console class="baseColor mr-2" /> Full Stack Web Developer -->
 
 <!--
+gut: < 02:00
+* offenkundig Student der TUD im MA Studium, welches ich voraussichtlich heute abschließen werden, da dies meine
+  letzte Prüfungsleistung ist
+* im Bachelor auf Datenbanken spezialisiert -> BA Arbeit
+  * RODEL - Eine Evolutionssprache für rollenbasierte Datenbanken
+* später dann die Liebe zur Webentwicklung entdeckt
 * Im Bachelor beruflich orientiert
-  * Backendlösungen und Datenbanken
-    * Bachelorarbeit
-  * später dann die Liebe zur Webentwicklung entdeckt
+* Doch worum geht es in meiner Arbeit?
 -->
 
 ---
@@ -132,6 +139,7 @@ clicks: 3
 </div>
 
 <!--
+gut: < 04:00
 * "Modell" ist falsch, eigentlich "Filmmusikalische Topologien"
 * Ohne Informatiker: Gibt es schon vergleichbares, an dem man sich orientieren kann?
 -->
@@ -140,35 +148,52 @@ clicks: 3
 
 <AppReferenceToWrittenWork :pages="['1.1.', '2.3.', '2.4.']" />
 
-<div class="flex flex-row">
-  <h1>Verwandte Arbeiten</h1>
-  <div class="pt-3 pl-8 text-xl baseColor">Wissenschaftliche Arbeiten</div>
-</div>
+# Aktueller Stand
 
+<div class="flex flex-row justify-between">
+
+<div class="w-1/2 flex-grow-0 flex-shrink-0">
+<div v-click="1" class="baseColor text-xl pt-3 pb-2">Verwandte Arbeiten</div>
 <VClicks class="space-y-0.5 text-xl">
 
 * Betrachtung einzelner Filmcharaktere in kontextlosen und abstrakten Bewegbilder:
-  * <span class="text-gray-400 text-sm">Annabel Cohen, Sandra K. Marshall [<AppLiteratureHyperlink>MC88</AppLiteratureHyperlink>]</span>
   * <span class="text-gray-400 text-sm">Bethold Hoeckner [<AppLiteratureHyperlink>Hoe11</AppLiteratureHyperlink>]</span>
 * Einzelfilmanalysen:
   * <span class="text-gray-400 text-sm">Annabel Cohen zu dem Film "The red Violin" [<AppLiteratureHyperlink>Coh</AppLiteratureHyperlink>]</span>
 * Filmübergreifende eingeschänkte Analysen:
-  * <span class="text-gray-400 text-sm">Nathan Fink zu sechs Filmen von Alfred Hitchcock [<AppLiteratureHyperlink>Fin06</AppLiteratureHyperlink>]</span>
   * <span class="text-gray-400 text-sm">Pascal Rudolph zu 12 Filmen [<AppLiteratureHyperlink>Rud22</AppLiteratureHyperlink>]</span>
-  * <span class="text-gray-400 text-sm">Philip Kümpel zu verschiedenen zufällig ausgewählten Filmen [<AppLiteratureHyperlink>Küm19</AppLiteratureHyperlink>]</span>
+  * <span class="text-gray-400 text-sm">Philip Kümpel zu verschiedenen zufälligen Filmen [<AppLiteratureHyperlink>Küm19</AppLiteratureHyperlink>]</span>
 * Filmübergreifende vollständige Analysen:
-  * <div class="w-full border-2 bg-red-600/10 border-red-600 rounded-lg text-red-600 text-xl flex flex-row justify-center">
+  * <div class="w-9/10 border-2 bg-red-600/10 border-red-600 rounded-lg text-red-600 text-xl flex flex-row justify-center">
       ? ? ?
     </div>
 
 </VClicks>
+</div>
+
+<div class="w-1/2 flex-grow-0 flex-shrink-0">
+<div v-click="1" class="baseColor text-xl pt-3 pb-2">existierende Softwarelösungen</div>
+<VClicks class="space-y-0.5 text-xl">
+
+* Analyse von Audiodateien
+* Analyse von Musiknoten
+* Bestehende Datenbanken
+  * Film Metainformationen
+  * Bildanalysen
+  * Filmmusikkataloge
+
+</VClicks>
+</div>
+
+</div>
 
 <!--
+gut: < 06:00
 * Keiner der Arbeiten deckt die Filme vollständig mit allen Parametern ab, z.B.:
+  * Bethold Hoeckner lässt Filmdramaturgie komplett weg
+  * Pascal Rudolph nur zu ausgewählten Musikeinsätzen & nur 12 Filme
+    (Buch "Präexistente Musik im Film" 2022)
   * Philip Kümpel konzentriert sich auf die Instrumentation
-  * Pascal Rudolph nur zu ausgewählten Musikeinsätzen & nur 12 Filme  
-    In deinem Buch "Präexistente Musik im Film" von 2022
-  * Annabel Cohen, Sandra K. Marshall und Bethold Hoeckner lassen Filmdramaturgie komplett weg
 * Warum also gibt es solch eine große, vollumfängliche Korpusstudie noch nicht? -> Überlegen wir uns einmal das Herangehen
 -->
 
@@ -200,16 +225,17 @@ clicks: 3
 </div>
 
 <!--
+gut: < 11:00
 * nur vereinzelte filmübergreifende Studien, da sehr komplex und umfangreich
 * Möglichkeit der Vereinheitlichung der Analysen filmübergreifend, da Film sehr individuell
   * Pascal Rudolph "Präexistente Musik im Film" 2022 [?] sagt schon in seiner Einleitung, dass er ueberall anders
     vorgehen musste
-* von anderen kann man nicht nutzen, daher immer wieder von vorne
-* Wie meine Recherche zeigte, gibt es momentan nichts hierfür //TODO grob als eigene Folie?
-* Das heisst, wir muessen da ran.
+* von anderen kann man nicht nutzen, da nichts Einheitliches
 -->
 
 ---
+
+<AppReferenceToWrittenWork :pages="['3.1.', '4.2.1.', '4.2.2.']" />
 
 # Das Ergebnis: FMADB
 
@@ -219,13 +245,19 @@ clicks: 3
 
 </div>
 
-<div v-click class="mt-4 text-xl">
+<div v-click class="mt-2 text-xl">
+
+* In Englischer Sprache
+
+</div>
+
+<div v-click class="mt-2 text-xl">
 
 * Interdisziplinäre Zusammenarbeit über unterschiedliche Universitäten unterschiedlicher Länder
 
 </div>
 
-<div class="w-full flex flex-row justify-center mt-4" v-after>
+<div class="w-full flex flex-row justify-center mt-2" v-after>
   <div>
     <img class="h-20 p-4"
          src="/assets/attribution_logos/TU-Dresden.svg"
@@ -243,7 +275,7 @@ clicks: 3
   </div>
 </div>
 
-<div v-click class="mt-4 text-xl">
+<div v-click class="mt-2 text-xl">
 
 * Software vorgestellt auf Kongressen
   * Jahreskongress der Gesellschaft für Musiktheorie (2022-09-30 bis 2022-10-02 in Salzburg)
@@ -253,6 +285,7 @@ clicks: 3
 </div>
 
 <!--
+gut: < 13:00
 * Hfm vertreten durch Susanne
 * TU-Dresden vertreten durch mich
 * Epfl in der Schweiz als Expertenfeedback
@@ -277,6 +310,7 @@ clicks: 5
 </div>
 
 <!--
+gut: < 15:00
 * Am Anfang stehen viele Filme ...
 * ... am Ende wollen wir Erkenntnisse aus den Filmmusiken dieser haben
 * Erkenntnisse vergleichbar mit anderen, nicht nur für sich selbst.
@@ -335,6 +369,10 @@ clicks: 5
 
 </div>
 
+<!--
+gut: < 16:00
+-->
+
 ---
 
 <AppReferenceToWrittenWork :pages="['3.6.2.', '3.7.']" />
@@ -392,15 +430,10 @@ Kategorien:
 </div>
 
 <!--
+gut: < 20:00
 * viele Parameter, welche nehme ich, welche bringen mir etwas?
-* Analyseparameter unterteilt in:
-  * Musiktheoretischer Parameter
-    * aufgrund Umfang hierauf konzentriert
-  * Dramaturgische Parameter
-  * Bildgestalterische Parameter
-  * Drehbuchbezogene Parameter
-  * Wahrnehmungs-Parameter
-  * Sonstiger Parameter
+* Musiktheoretischer Parameter
+  * aufgrund Umfang hierauf konzentriert
 -->
 
 ---
@@ -464,6 +497,7 @@ clicks: 6
 </div>
 
 <!--
+gut: < 24:00
 * separat veröffentlichte Soundtracks weichen von Filmen ab
 * Doch wie visualisieren während der Analysen und der Eingaben der Daten?
 * Rechtliche Probleme!
@@ -496,7 +530,7 @@ clicks: 7
         <div v-click="4">
           Zeitleiste
         </div>
-        <div class="text-gray-400 font-normal" v-click="5">
+        <div class="text-gray-400 font-normal" v-click="6">
           mit Zeitleistenelementtypen:
         </div>
       </td>
@@ -533,7 +567,7 @@ clicks: 7
 
 <AppBiggerPresentationTables />
 
-<div class="absolute top-59 left-130" v-click="5">
+<div class="absolute top-59 left-130" v-click="6">
   <div class="mb-3">1. Ein Wert, sequentiell (z.B. BPM, dynamic, root)</div>
   <div class="mb-3">2. Mehrere Werte, sequentiell (als Typ 3 darstellbar)</div>
   <div class="mb-3">3. Ein Wert, parallel (z.B. Orchestration)</div>
@@ -546,7 +580,7 @@ clicks: 7
   als Visualisierung mit Eingabehilfe
 </div> -->
 
-<div class="absolute top-90 left-135" v-click="6">
+<div class="absolute top-90 left-135" v-click="5">
   <img src="/assets/miniTimeline.svg" class="w-95" />
 </div>
 
@@ -557,9 +591,10 @@ clicks: 7
 </div>
 
 <!--
-* Wort `Auswertung` hier etwas irreführend, da nun zweierlei gemeint ist:
-  * leichte Eingabe mit Visualisierung
-  * Evaluation als Erkenntnissgewinn nach Dateneingabe
+gut: < 26:00
+* Tabellen schlecht
+  * Doppelte Einträge bei gleichbleibenden Werten
+  * Pausen nicht gut erkennbar
 * Das wird in FMADB `Timeline` genannt
 * <span class="text-red-500 font-bold text-lg">semantische Zusammenhänge: Dirty/Clean Logik</span>
 -->
@@ -603,6 +638,13 @@ clicks: 7
   </li>
 </ul>
 
+<!--
+gut: < 30:00
+* Wort `Auswertung` hier etwas irreführend, da nun zweierlei gemeint ist:
+  * leichte Eingabe mit Visualisierung
+  * Evaluation als Erkenntnissgewinn nach Dateneingabe
+-->
+
 ---
 
 # Probleme & Lösungen
@@ -621,6 +663,10 @@ clicks: 7
   <mdi-check class="text-green-500" /> Umfangreichere Korpusstudien möglich 🤩
 </div>
 
+<!--
+gut: < 32:00
+-->
+
 ---
 
 <AppReferenceToWrittenWork :pages="['4.']" />
@@ -630,6 +676,10 @@ clicks: 7
 <div class="w-full flex flex-row justify-center mt-30">
   <img src="/assets/EcosystemCommunication.svg" class="h-42" />
 </div>
+
+<!--
+gut: < 32:00
+-->
 
 ---
 
@@ -653,10 +703,10 @@ clicks: 7
             <LogosYarn class="mr-2" /> Yarn3
           </div>
           <div>
-            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
+            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
           </div>
           <div>
-            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
+            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
           </div>
           <div>
             <LogosNestjs class="mr-2" /> NestJS
@@ -679,7 +729,7 @@ clicks: 7
         </div>
       </div>
     </div>
-    <div class="py-1 px-4 w-73 flex-shrink-0" v-click>
+    <div class="py-1 px-4 w-73 flex-shrink-0" v-after>
       <div>
         <mdi-github class="mr-2" />
         <a href="https://github.com/toddeTV/FMADB_frontend" target="_blank">toddeTV/FMADB_frontend</a>
@@ -693,10 +743,10 @@ clicks: 7
             <LogosYarn class="mr-2" /> Yarn3
           </div>
           <div>
-            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
+            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
           </div>
           <div>
-            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
+            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
           </div>
           <div>
             <LogosVue class="mr-2" /> Vue3
@@ -734,7 +784,7 @@ clicks: 7
         </div>
       </div>
     </div>
-    <div class="py-1 px-4 w-83 flex-shrink-0" v-click>
+    <div class="py-1 px-4 w-83 flex-shrink-0" v-after>
       <div>
         <mdi-github class="mr-2" />
         <a href="https://github.com/toddeTV/FMADB_documentation" target="_blank">toddeTV/FMADB_documentation</a>
@@ -748,10 +798,10 @@ clicks: 7
             <LogosYarn class="mr-2" /> Yarn3
           </div>
           <div>
-            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
+            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
           </div>
           <div>
-            <mdi-github class="mr-2" /> GitHub Actions (CI/CD)
+            <mdi-docker class="mr-2" style="color: #2497ED;" /> Docker
           </div>
           <div>
             <LogosVue class="mr-2" /> Vue3
@@ -779,7 +829,11 @@ clicks: 7
 </div>
 
 <!--
-* als Webservice, da Benutzerzielgruppe und OS unabhängig
+gut: < 34:00
+
+raus: < 37:00
+* Polyrepo einfacher für schnelleres Deployment
+* Monorepo einfacher für Versionen untereinander
 -->
 
 ---
@@ -900,12 +954,14 @@ clicks: 7
   * Prisma in NestJS als Code-First-Approach mit Automatischen Datenbankmigrationen
   * Prisma Client in GraphQL in NestJS nutzen
   * Pagination mit Prisma Client in NestJS
+  * Yarn v3 PnP nicht mit Prisma möglich
   * Apollo Anomalien in Vue3: Mehrfaches triggern von Queries und Mutations
   * Parameter `Transcription`: Musikdateien parsen
-  * globaler Pool für `Keywords` und `Instrumente`
   * Semantische Zusammenhänge zwischen Parametern (Timeline Logik: Dirty/Clean)
 
 </VClicks>
+
+<!-- * globaler Pool für `Keywords` und `Instrumente` -->
 
 <!--
 * Orchestration:
@@ -972,18 +1028,6 @@ clicks: 7
 
 <div class="flex flex-row mb-4">
   <div class="w-25 flex-shrink-0 flex-grow-0">
-    [MC88]
-  </div>
-  <div class="text-justify">
-    Sandra K Marshall und Annabel J Cohen. "Effects of musical soundtracks on attitudes
-    toward animated geometric figures". Englisch. In: <span class="italic">Music perception</span> 6.1 (1988), S. 95–
-    1.   DOI:
-    <a href="https://doi.org/10.2307/40285417" target="_blank">https://doi.org/10.2307/40285417</a>.
-  </div>
-</div>
-
-<div class="flex flex-row mb-4">
-  <div class="w-25 flex-shrink-0 flex-grow-0">
     [Hoe11]
   </div>
   <div class="text-justify">
@@ -1001,19 +1045,6 @@ clicks: 7
     AJ Cohen. "How music influences the interpretation of film and video: approaches
     from experimental psychology. RA Kendall & RWH Savage". In: <span class="italic">Perspectives in Systematic
     Musicology</span>, S. 15–36.
-  </div>
-</div>
-
-<div class="flex flex-row mb-4">
-  <div class="w-25 flex-shrink-0 flex-grow-0">
-    [Fin06]
-  </div>
-  <div class="text-justify">
-    Nathan Fink. "The sound of suspense: An analysis of music in Alfred Hitchcock films".
-    In: <span class="italic">Proceedings of the 9th International Conference on Music Perception and Cognition</span>
-    (<span class="italic">ICMPC9</span>). Citeseer. 2006, S. 193–198. DOI:
-    <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.610.738&rep=rep1&type=pdf" target="_blank">
-      https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.610.738&rep=rep1&type=pdf</a>.
   </div>
 </div>
 
