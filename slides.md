@@ -5,7 +5,7 @@ themeConfig:
   primary: '#3b82f6'
   showTotalPageCount: false
   showPageProcessBar: true
-  literatureSlideNumber: 26
+  literatureSlideNumber: -1
 title: Talk 2023-01-25 - master's thesis defense
 author:
   name: Thorsten Seyschab
@@ -151,16 +151,10 @@ gut: < 04:00
 
 <VClicks class="space-y-4 text-xl">
 
-* Verwandte wissenschaftliche Arbeiten:
-  * Betrachtung einzelner Filmcharaktere in kontextlosen und abstrakten Bewegbilder
-  * Einzelfilmanalysen
-  * Filmübergreifende eingeschänkte Analysen
-  * <span class="line-through">Filmübergreifende vollständige Analysen</span>
-* Gründe:
-  * <mdi-image-size-select-small class="baseColor mr-2" /> Umfang
-    <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
-  * <mdi-select-compare class="baseColor mr-2" /> Vergleichbarkeit
-    <span class="text-sm ml-10">einheitliche Struktur bereitstellen</span>
+* <mdi-image-size-select-small class="baseColor mr-2" /> Umfang
+  <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
+* <mdi-select-compare class="baseColor mr-2" /> Vergleichbarkeit
+  <span class="text-sm ml-10">einheitliche Struktur bereitstellen</span>
   
 </VClicks>
 
@@ -178,6 +172,15 @@ gut: < 04:00
 
 <!--
 gut: < 06:00
+* <span class="text-red-500">Keine vollständigen Filmübergreifende wissenschaftliche Arbeiten</span>
+  * Betrachtung einzelner Filmcharaktere in kontextlosen und abstrakten Bewegbilder
+    * Bethold Hoeckner lässt Filmdramaturgie komplett weg
+  * Einzelfilmanalysen
+    * Annabel Cohen zu dem Film "The red Violin"
+  * Filmübergreifende eingeschänkte Analysen
+    * Pascal Rudolph nur zu ausgewählten Musikeinsätzen in 12 Filmen (Buch "Präexistente Musik im Film" 2022)
+  * Filmübergreifende vollständige Analysen
+    * NOPE
 * <span class="text-red-500">Keine existierenden Softwarelösungen:</span>
   * Analyse Audiodatei vs Musiknoten
   * existierende Datenbanken: Metainfos & Musikkataloge
@@ -186,11 +189,6 @@ gut: < 06:00
   * Pascal Rudolph "Präexistente Musik im Film" 2022 [?] sagt schon in seiner Einleitung, dass er ueberall anders
     vorgehen musste
 * von anderen kann man nicht nutzen, da nichts Einheitliches
-* Verwandte wissenschaftliche Arbeiten:
-  * Zu 1: Bethold Hoeckner lässt Filmdramaturgie komplett weg
-  * Zu 2: Annabel Cohen zu dem Film "The red Violin"
-  * Zu 3: Pascal Rudolph nur zu ausgewählten Musikeinsätzen in 12 Filmen (Buch "Präexistente Musik im Film" 2022)
-  * Zu 4: -
 -->
 
 ---
@@ -201,19 +199,13 @@ gut: < 06:00
 
 <div v-click class="mt-15 text-xl">
 
-* Webservice unter: <a href="https://fmadb.org/" target="_blank">https://fmadb.org/</a>
+* Webservice in Englisch unter: <a href="https://fmadb.org/" target="_blank">https://fmadb.org/</a>
 
 </div>
 
 <div v-click class="mt-2 text-xl">
 
-* In Englischer Sprache
-
-</div>
-
-<div v-click class="mt-2 text-xl">
-
-* Interdisziplinäre Zusammenarbeit über unterschiedliche Universitäten unterschiedlicher Länder
+* Interdisziplinäre Zusammenarbeit mit unterschiedlichen Instituten unterschiedlicher Länder
 
 </div>
 
@@ -909,22 +901,6 @@ clicks: 7
 
 ---
 
-<AppReferenceToWrittenWork :pages="['6.3.']" />
-
-# Abweichungen zur Arbeit
-
-<VClicks class="space-y-2 text-xl">
-
-* Anderer Hoster
-* Weitere Evaluation: `Dynamic Curve`
-* Als Reaktion auf die Umfrage:
-  * Neue Filme mit ganzer TMDB URL hinzufügbar
-  * Weiterführende Erklärungstexte in der Dokumentation
-
-</VClicks>
-
----
-
 # Mehr in meiner schriftlichen Arbeit
 
 <div class="flex flex-row justify-between">
@@ -950,58 +926,6 @@ clicks: 7
 <!--
 * ... und wie folgt strukturiert ist
 -->
-
----
-
-# Literatur
-
-<div class="flex flex-row mb-4 baseColor">
-  <div class="text-justify">
-    Thorsten Seyschab "<span class="italic">Konzeption und Implementierung einer Software zur Erfassung und
-    Auswertung von Filmmusikanalysen mit Fokus auf grundlegenden musiktheoretischen Parametern</span>"
-    (Masterarbeit, Abgabe 2022-12-31)
-  </div>
-</div>
-
-<div class="flex flex-row mb-4">
-  <div class="w-25 flex-shrink-0 flex-grow-0">
-    [Hoe11]
-  </div>
-  <div class="text-justify">
-    Berthold Hoeckner u. a. "Film music influences how viewers relate to movie characters."
-    In: <span class="italic">Psychology of Aesthetics, Creativity, and the Arts</span> 5.2 (2011), S. 146. DOI:
-    <a href="https://psycnet.apa.org/doi/10.1037/a0021544" target="_blank">https://psycnet.apa.org/doi/10.1037/a0021544</a>.
-  </div>
-</div>
-
-<div class="flex flex-row mb-4">
-  <div class="w-25 flex-shrink-0 flex-grow-0">
-    [Coh]
-  </div>
-  <div class="text-justify">
-    AJ Cohen. "How music influences the interpretation of film and video: approaches
-    from experimental psychology. RA Kendall & RWH Savage". In: <span class="italic">Perspectives in Systematic
-    Musicology</span>, S. 15–36.
-  </div>
-</div>
-
-<div class="flex flex-row mb-4">
-  <div class="w-25 flex-shrink-0 flex-grow-0">
-    [Rud22]
-  </div>
-  <div class="text-justify">
-    Pascal Rudolph. "Präexistente Musik im Film: Klangwelten im Kino des Lars von Trier". In: (2022).
-  </div>
-</div>
-
-<div class="flex flex-row mb-4">
-  <div class="w-25 flex-shrink-0 flex-grow-0">
-    [Küm19]
-  </div>
-  <div class="text-justify">
-    Philipp Kümpel. <span class="italic">Filmmusik in der Praxis: komponieren, produzieren, verkaufen.</span> PPVMedien, 2019.
-  </div>
-</div>
 
 ---
 
