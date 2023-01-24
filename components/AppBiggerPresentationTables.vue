@@ -7,7 +7,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div v-if="$slidev.nav.clicks === 3">
+  <div v-if="$slidev.nav.clicks === 4">
     <img src="/assets/parameter-example-tables/2_one-table-with-overlap.png"
       v-click="3"
       class="animImg2 absolute bottom-40 left-20 z-10" />

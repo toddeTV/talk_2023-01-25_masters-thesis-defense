@@ -53,6 +53,8 @@ drawings:
 <AppIntroLogoFullscreen />
 
 <!--
+<div class="text-2xl text-red-600">in 00:00 - out 01:00</div>
+
 * Begrüßung zu MA Verteidigung -> zahlreich erschienen
 * 30 min Vortrag
   * Übersicht meiner Arbeit und der Ergebnisse
@@ -94,7 +96,8 @@ layout: two-cols
 <!-- * <mdi-console class="baseColor mr-2" /> Full Stack Web Developer -->
 
 <!--
-gut: < 02:00
+<div class="text-2xl text-red-600">in 01:00 - out 02:00</div>
+
 * offenkundig Student der TUD im MA Studium, welches ich voraussichtlich heute abschließen werden, da dies meine
   letzte Prüfungsleistung ist
 * im Bachelor auf Datenbanken spezialisiert -> BA Arbeit
@@ -138,7 +141,8 @@ clicks: 3
 </div>
 
 <!--
-gut: < 04:00
+<div class="text-2xl text-red-600">in 02:00 - out 03:00</div>
+
 * "Modell" ist falsch, eigentlich "Filmmusikalische Topologien"
 * Ohne Informatiker: Gibt es schon vergleichbares, an dem man sich orientieren kann?
 -->
@@ -149,7 +153,7 @@ gut: < 04:00
 
 # Warum gibt es solch große Korpusstudien noch nicht?
 
-<VClicks class="space-y-4 text-xl">
+<VClicks class="space-y-12 text-xl pt-15">
 
 * <mdi-image-size-select-small class="baseColor mr-2" /> Umfang
   <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
@@ -158,7 +162,7 @@ gut: < 04:00
   
 </VClicks>
 
-<div v-click class="text-2xl text-center mt-7 text-gray-400">
+<div v-click class="text-2xl text-center mt-20 text-gray-400">
   <mdi-arrow-right class="mr-2 pt-1" />
   <span class="line-through">Geht das nicht ohne die Informatik?</span>
   <mdi-arrow-left class="ml-2 pt-1" />
@@ -171,7 +175,8 @@ gut: < 04:00
 </div>
 
 <!--
-gut: < 06:00
+<div class="text-2xl text-red-600">in 03:00 - out 04:00</div>
+
 * <span class="text-red-500">Keine vollständigen Filmübergreifende wissenschaftliche Arbeiten</span>
   * Betrachtung einzelner Filmcharaktere in kontextlosen und abstrakten Bewegbilder
     * Bethold Hoeckner lässt Filmdramaturgie komplett weg
@@ -237,7 +242,8 @@ gut: < 06:00
 </div>
 
 <!--
-gut: < 10:00
+<div class="text-2xl text-red-600">in 04:00 - out 05:00</div>
+
 * Hfm vertreten durch Susanne
 * TU-Dresden vertreten durch mich
 * Epfl in der Schweiz als Expertenfeedback
@@ -262,7 +268,8 @@ clicks: 5
 </div>
 
 <!--
-gut: < 12:00
+<div class="text-2xl text-red-600">in 05:00 - out 06:00</div>
+
 * Am Anfang stehen viele Filme ...
 * ... am Ende wollen wir Erkenntnisse aus den Filmmusiken dieser haben
 * Erkenntnisse vergleichbar mit anderen, nicht nur für sich selbst.
@@ -322,7 +329,7 @@ gut: < 12:00
 </div>
 
 <!--
-gut: < 13:00
+<div class="text-2xl text-red-600">in 06:00 - out 08:00</div>
 -->
 
 ---
@@ -382,7 +389,8 @@ Kategorien:
 </div>
 
 <!--
-gut: < 17:00
+<div class="text-2xl text-red-600">in 08:00 - out 10:00</div>
+
 * viele Parameter, welche nehme ich, welche bringen mir etwas?
 * Musiktheoretischer Parameter
   * aufgrund Umfang hierauf konzentriert
@@ -449,14 +457,15 @@ clicks: 6
 </div>
 
 <!--
-gut: < 21:00
+<div class="text-2xl text-red-600">in 10:00 - out 11:00</div>
+
 * separat veröffentlichte Soundtracks weichen von Filmen ab
 * Doch wie visualisieren während der Analysen und der Eingaben der Daten?
 * Rechtliche Probleme!
 -->
 
 ---
-clicks: 7
+clicks: 8
 ---
 
 <AppReferenceToWrittenWork :pages="['3.3.', '3.4.']" />
@@ -479,8 +488,8 @@ clicks: 7
         </div>
       </td>
       <td class="align-top">
-        <div v-click="4">
-          Zeitleiste
+        <div v-click="5">
+          Zeitleiste (= Timeline)
         </div>
         <div class="text-gray-400 font-normal" v-click="6">
           mit Zeitleistenelementtypen:
@@ -509,7 +518,7 @@ clicks: 7
       <td class="border-r-1">
         3. Mehrere Tabellen, eine pro Parameter<br>
         <img src="/assets/parameter-example-tables/3_multiple-tables-per-parameter_small.png"
-             class="mt-1 animImg1" v-click="2" />
+             class="mt-1 animImg1" v-click="3" />
       </td>
       <td>
       </td>
@@ -519,7 +528,7 @@ clicks: 7
 
 <AppBiggerPresentationTables />
 
-<div class="absolute top-59 left-130" v-click="6">
+<div class="absolute top-59 left-130" v-click="7">
   <div class="mb-3">1. Ein Wert, sequentiell (z.B. BPM, dynamic, root)</div>
   <div class="mb-3">2. Mehrere Werte, sequentiell (als Typ 3 darstellbar)</div>
   <div class="mb-3">3. Ein Wert, parallel (z.B. Orchestration)</div>
@@ -532,22 +541,23 @@ clicks: 7
   als Visualisierung mit Eingabehilfe
 </div> -->
 
-<div class="absolute top-90 left-135" v-click="5">
+<div class="absolute top-90 left-135" v-click="6">
   <img src="/assets/miniTimeline.svg" class="w-95" />
 </div>
 
-<div class="absolute flex flex-row left-125 top-42 z-10" v-click="7">
+<div class="absolute flex flex-row left-125 top-42 z-10" v-click="8">
   <div class="border border-green-500 rounded-lg w-65 h-12.5 mr-2">
   </div>
   <mdi-check class="text-green-500 text-xl mt-1.5" />
 </div>
 
 <!--
-gut: < 23:00
+<div class="text-2xl text-red-600">in 11:00 - out 14:00</div>
+
+* Ein Parameter hat Startzeit, Endzeit und Wert
 * Tabellen schlecht
   * Doppelte Einträge bei gleichbleibenden Werten
   * Pausen nicht gut erkennbar
-* Das wird in FMADB `Timeline` genannt
 * <span class="text-red-500 font-bold text-lg">semantische Zusammenhänge: Dirty/Clean Logik</span>
 -->
 
@@ -591,7 +601,8 @@ gut: < 23:00
 </ul>
 
 <!--
-gut: < 27:00
+<div class="text-2xl text-red-600">in 14:00 - out 15:00</div>
+
 * Wort `Auswertung` hier etwas irreführend, da nun zweierlei gemeint ist:
   * leichte Eingabe mit Visualisierung
   * Evaluation als Erkenntnissgewinn nach Dateneingabe
@@ -616,7 +627,7 @@ gut: < 27:00
 </div>
 
 <!--
-gut: < 29:00
+<div class="text-2xl text-red-600">in 15:00 - out 15:00</div>
 -->
 
 ---
@@ -630,7 +641,7 @@ gut: < 29:00
 </div>
 
 <!--
-gut: <
+<div class="text-2xl text-red-600">in 15:00 - out 16:00</div>
 -->
 
 ---
@@ -781,17 +792,28 @@ gut: <
 </div>
 
 <!--
-gut: <
+<div class="text-2xl text-red-600">in 16:00 - out 18:00</div>
+
 * Polyrepo einfacher für schnelleres Deployment
 * Monorepo einfacher für Versionen untereinander
 -->
 
 ---
 
+# Demo Video
+
+Wenn hier kein Video zu sehen ist, unterstützt der Browser keine Videoeinbindungen.
+
+Bitte in diesem Fall einen anderen Browser nutzen.
+
 <video controls class="absolute bottom-0 left-0 z-100">
   <source src="/assets/demo-videos/main.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+<!--
+<div class="text-2xl text-red-600">in 18:00 - out 23:00</div>
+-->
 
 ---
 clicks: 7
@@ -807,6 +829,8 @@ clicks: 7
 <!-- <img src="/assets/memes/sense-now.jpg" class="absolute w-55 top-17 left-135" /> -->
 
 <!--
+<div class="text-2xl text-red-600">in 23:00 - out 25:00</div>
+
 1. What?
 2. Gruppen
 3. Metadatenmodell:
@@ -822,9 +846,45 @@ clicks: 7
 
 ---
 
+<AppReferenceToWrittenWork :pages="['3.7.', '4.5.2.', '4.5.3.', '4.6.3.', '4.12.']" />
+
+# Besondere Hürden
+
+<VClicks class="space-y-2 text-xl">
+
+* Konzeptionell schwierig:
+  * Umfang des Datenmodells bewältigen
+  * Parameter `Orchestration`: Detailgrad
+* Programierung schwierig:
+  * Prisma in NestJS als Code-First-Approach mit Automatischen Datenbankmigrationen
+  * Prisma Client in GraphQL in NestJS nutzen
+  * Pagination mit Prisma Client in NestJS
+  * Yarn v3 PnP nicht mit Prisma möglich
+  * Apollo Anomalien in Vue3: Mehrfaches triggern von Queries und Mutations
+  * Parameter `Transcription`: Musikdateien parsen
+  * Semantische Zusammenhänge zwischen Parametern (Timeline Logik: Dirty/Clean)
+
+</VClicks>
+
+<!-- * globaler Pool für `Keywords` und `Instrumente` -->
+
+<!--
+<div class="text-2xl text-red-600">in 25:00 - out 27:00</div>
+
+* Orchestration:
+  * nicht zu detailliert, da es dann eine Transkription ist
+  * muss aber noch genug Informationen beinhalten
+* Umfang und Komplexität des Projektes (Parameter mit je individuellen Evaluationen)
+-->
+
+---
+
 <AppReferenceToWrittenWork :pages="['4.6.3.']" />
 
-# Entwicklung des Timeline-Ansatzes
+<div class="flex flex-row">
+  <h1>Besondere Hürden</h1>
+  <div class="pt-3 pl-8 text-xl baseColor">Entwicklung des Timeline-Ansatzes</div>
+</div>
 
 <div class="flex flex-row justify-between">
   <div class="w-20/41" v-click>
@@ -865,38 +925,9 @@ clicks: 7
 </div>
 
 <!--
+<div class="text-2xl text-red-600">in 27:00 - out 28:00</div>
+
 * echte Daten des Films `Countdown`
--->
-
----
-
-<AppReferenceToWrittenWork :pages="['3.7.', '4.5.2.', '4.5.3.', '4.6.3.', '4.12.']" />
-
-# Besondere Hürden
-
-<VClicks class="space-y-2 text-xl">
-
-* Konzeptionell schwierig:
-  * Umfang des Datenmodells bewältigen
-  * Parameter `Orchestration`: Detailgrad
-* Programierung schwierig:
-  * Prisma in NestJS als Code-First-Approach mit Automatischen Datenbankmigrationen
-  * Prisma Client in GraphQL in NestJS nutzen
-  * Pagination mit Prisma Client in NestJS
-  * Yarn v3 PnP nicht mit Prisma möglich
-  * Apollo Anomalien in Vue3: Mehrfaches triggern von Queries und Mutations
-  * Parameter `Transcription`: Musikdateien parsen
-  * Semantische Zusammenhänge zwischen Parametern (Timeline Logik: Dirty/Clean)
-
-</VClicks>
-
-<!-- * globaler Pool für `Keywords` und `Instrumente` -->
-
-<!--
-* Orchestration:
-  * nicht zu detailliert, da es dann eine Transkription ist
-  * muss aber noch genug Informationen beinhalten
-* Umfang und Komplexität des Projektes (Parameter mit je individuellen Evaluationen)
 -->
 
 ---
@@ -908,6 +939,8 @@ clicks: 7
 </div>
 
 <!--
+<div class="text-2xl text-red-600">Endspurt</div>
+
 * Mehr nachzulesen in meiner schriftlichen Arbeit
 * Titel vorlesen
 * Welche sich über 127 großartige Seiten erstreckt ...
@@ -924,6 +957,8 @@ clicks: 7
 </div>
 
 <!--
+<div class="text-2xl text-red-600">Endspurt</div>
+
 * ... und wie folgt strukturiert ist
 -->
 
