@@ -70,7 +70,7 @@ layout: two-cols
 
 <h1>Über mich</h1>
 
-<div class="flex flex-col justify-center items-center mt-14">
+<div class="flex flex-col justify-center items-center mt-20">
   <img class="w-50 rounded-full"
       src="/assets/persons/Thorsten-Seyschab.jpg"
   />
@@ -79,7 +79,7 @@ layout: two-cols
 
 ::right::
 
-<VClicks class="space-y-2 text-xl h-full mt-22">
+<VClicks class="space-y-2 text-xl h-full mt-28">
 
 * <mdi-school-outline class="baseColor mr-2" /> Technische Universität Dresden
 * <mdi-desktop-classic class="baseColor mr-2" /> Informatiker aus Deutschland<br>
@@ -98,8 +98,7 @@ gut: < 02:00
 * offenkundig Student der TUD im MA Studium, welches ich voraussichtlich heute abschließen werden, da dies meine
   letzte Prüfungsleistung ist
 * im Bachelor auf Datenbanken spezialisiert -> BA Arbeit
-  * RODEL - Eine Evolutionssprache für rollenbasierte Datenbanken
-* später dann die Liebe zur Webentwicklung entdeckt
+* später dann die Liebe zur Webentwicklung entdeckt -> MA Arbeit
 * Im Bachelor beruflich orientiert
 * Doch worum geht es in meiner Arbeit?
 -->
@@ -148,71 +147,24 @@ gut: < 04:00
 
 <AppReferenceToWrittenWork :pages="['1.1.', '2.3.', '2.4.']" />
 
-# Aktueller Stand
-
-<div class="flex flex-row justify-between">
-
-<div class="w-1/2 flex-grow-0 flex-shrink-0">
-<div v-click="1" class="baseColor text-xl pt-3 pb-2">Verwandte Arbeiten</div>
-<VClicks class="space-y-0.5 text-xl">
-
-* Betrachtung einzelner Filmcharaktere in kontextlosen und abstrakten Bewegbilder:
-  * <span class="text-gray-400 text-sm">Bethold Hoeckner [<AppLiteratureHyperlink>Hoe11</AppLiteratureHyperlink>]</span>
-* Einzelfilmanalysen:
-  * <span class="text-gray-400 text-sm">Annabel Cohen zu dem Film "The red Violin" [<AppLiteratureHyperlink>Coh</AppLiteratureHyperlink>]</span>
-* Filmübergreifende eingeschänkte Analysen:
-  * <span class="text-gray-400 text-sm">Pascal Rudolph zu 12 Filmen [<AppLiteratureHyperlink>Rud22</AppLiteratureHyperlink>]</span>
-  * <span class="text-gray-400 text-sm">Philip Kümpel zu verschiedenen zufälligen Filmen [<AppLiteratureHyperlink>Küm19</AppLiteratureHyperlink>]</span>
-* Filmübergreifende vollständige Analysen:
-  * <div class="w-9/10 border-2 bg-red-600/10 border-red-600 rounded-lg text-red-600 text-xl flex flex-row justify-center">
-      ? ? ?
-    </div>
-
-</VClicks>
-</div>
-
-<div class="w-1/2 flex-grow-0 flex-shrink-0">
-<div v-click="1" class="baseColor text-xl pt-3 pb-2">existierende Softwarelösungen</div>
-<VClicks class="space-y-0.5 text-xl">
-
-* Analyse von Audiodateien
-* Analyse von Musiknoten
-* Bestehende Datenbanken
-  * Film Metainformationen
-  * Bildanalysen
-  * Filmmusikkataloge
-
-</VClicks>
-</div>
-
-</div>
-
-<!--
-gut: < 06:00
-* Keiner der Arbeiten deckt die Filme vollständig mit allen Parametern ab, z.B.:
-  * Bethold Hoeckner lässt Filmdramaturgie komplett weg
-  * Pascal Rudolph nur zu ausgewählten Musikeinsätzen & nur 12 Filme
-    (Buch "Präexistente Musik im Film" 2022)
-  * Philip Kümpel konzentriert sich auf die Instrumentation
-* Warum also gibt es solch eine große, vollumfängliche Korpusstudie noch nicht? -> Überlegen wir uns einmal das Herangehen
--->
-
----
-
-<AppReferenceToWrittenWork :pages="['1.1.']" />
-
 # Warum gibt es solch große Korpusstudien noch nicht?
 
-<VClicks class="space-y-10 mt-15 text-xl">
+<VClicks class="space-y-4 text-xl">
 
-* <mdi-image-size-select-small class="baseColor mr-2" /> Umfang<br>
-  <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
-* <mdi-select-compare class="baseColor mr-2" /> Vergleichbarkeit<br>
-  <span class="text-sm ml-10">einheitliche Struktur bereitstellen</span>
+* Verwandte wissenschaftliche Arbeiten:
+  * Betrachtung einzelner Filmcharaktere in kontextlosen und abstrakten Bewegbilder
+  * Einzelfilmanalysen
+  * Filmübergreifende eingeschänkte Analysen
+  * <span class="line-through">Filmübergreifende vollständige Analysen</span>
+* Gründe:
+  * <mdi-image-size-select-small class="baseColor mr-2" /> Umfang
+    <span class="text-sm ml-10">Dateneingabe und Auswertung vereinfachen</span>
+  * <mdi-select-compare class="baseColor mr-2" /> Vergleichbarkeit
+    <span class="text-sm ml-10">einheitliche Struktur bereitstellen</span>
   
 </VClicks>
 
-<div v-click class="text-2xl text-center mt-11 text-gray-400">
+<div v-click class="text-2xl text-center mt-7 text-gray-400">
   <mdi-arrow-right class="mr-2 pt-1" />
   <span class="line-through">Geht das nicht ohne die Informatik?</span>
   <mdi-arrow-left class="ml-2 pt-1" />
@@ -225,12 +177,20 @@ gut: < 06:00
 </div>
 
 <!--
-gut: < 11:00
+gut: < 06:00
+* <span class="text-red-500">Keine existierenden Softwarelösungen:</span>
+  * Analyse Audiodatei vs Musiknoten
+  * existierende Datenbanken: Metainfos & Musikkataloge
 * nur vereinzelte filmübergreifende Studien, da sehr komplex und umfangreich
 * Möglichkeit der Vereinheitlichung der Analysen filmübergreifend, da Film sehr individuell
   * Pascal Rudolph "Präexistente Musik im Film" 2022 [?] sagt schon in seiner Einleitung, dass er ueberall anders
     vorgehen musste
 * von anderen kann man nicht nutzen, da nichts Einheitliches
+* Verwandte wissenschaftliche Arbeiten:
+  * Zu 1: Bethold Hoeckner lässt Filmdramaturgie komplett weg
+  * Zu 2: Annabel Cohen zu dem Film "The red Violin"
+  * Zu 3: Pascal Rudolph nur zu ausgewählten Musikeinsätzen in 12 Filmen (Buch "Präexistente Musik im Film" 2022)
+  * Zu 4: -
 -->
 
 ---
@@ -285,7 +245,7 @@ gut: < 11:00
 </div>
 
 <!--
-gut: < 13:00
+gut: < 10:00
 * Hfm vertreten durch Susanne
 * TU-Dresden vertreten durch mich
 * Epfl in der Schweiz als Expertenfeedback
@@ -310,7 +270,7 @@ clicks: 5
 </div>
 
 <!--
-gut: < 15:00
+gut: < 12:00
 * Am Anfang stehen viele Filme ...
 * ... am Ende wollen wir Erkenntnisse aus den Filmmusiken dieser haben
 * Erkenntnisse vergleichbar mit anderen, nicht nur für sich selbst.
@@ -370,7 +330,7 @@ gut: < 15:00
 </div>
 
 <!--
-gut: < 16:00
+gut: < 13:00
 -->
 
 ---
@@ -430,7 +390,7 @@ Kategorien:
 </div>
 
 <!--
-gut: < 20:00
+gut: < 17:00
 * viele Parameter, welche nehme ich, welche bringen mir etwas?
 * Musiktheoretischer Parameter
   * aufgrund Umfang hierauf konzentriert
@@ -497,7 +457,7 @@ clicks: 6
 </div>
 
 <!--
-gut: < 24:00
+gut: < 21:00
 * separat veröffentlichte Soundtracks weichen von Filmen ab
 * Doch wie visualisieren während der Analysen und der Eingaben der Daten?
 * Rechtliche Probleme!
@@ -591,7 +551,7 @@ clicks: 7
 </div>
 
 <!--
-gut: < 26:00
+gut: < 23:00
 * Tabellen schlecht
   * Doppelte Einträge bei gleichbleibenden Werten
   * Pausen nicht gut erkennbar
@@ -639,7 +599,7 @@ gut: < 26:00
 </ul>
 
 <!--
-gut: < 30:00
+gut: < 27:00
 * Wort `Auswertung` hier etwas irreführend, da nun zweierlei gemeint ist:
   * leichte Eingabe mit Visualisierung
   * Evaluation als Erkenntnissgewinn nach Dateneingabe
@@ -664,7 +624,7 @@ gut: < 30:00
 </div>
 
 <!--
-gut: < 32:00
+gut: < 29:00
 -->
 
 ---
@@ -678,7 +638,7 @@ gut: < 32:00
 </div>
 
 <!--
-gut: < 32:00
+gut: <
 -->
 
 ---
@@ -829,40 +789,17 @@ gut: < 32:00
 </div>
 
 <!--
-gut: < 34:00
-
-raus: < 37:00
+gut: <
 * Polyrepo einfacher für schnelleres Deployment
 * Monorepo einfacher für Versionen untereinander
 -->
 
 ---
-layout: iframe
-url: https://fmadb.org/
----
 
-<!--  -->
-
----
-layout: iframe
-url: https://docs.fmadb.org/
----
-
-<!--  -->
-
----
-layout: iframe
-url: https://www.themoviedb.org/
----
-
-<!--  -->
-
----
-layout: iframe
-url: https://fmadb.org/
----
-
-<!--  -->
+<video controls class="absolute bottom-0 left-0 z-100">
+  <source src="/assets/demo-videos/main.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 clicks: 7
