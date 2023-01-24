@@ -5,7 +5,7 @@ themeConfig:
   primary: '#3b82f6'
   showTotalPageCount: false
   showPageProcessBar: true
-  literatureSlideNumber: 25
+  literatureSlideNumber: 26
 title: Talk 2023-01-25 - master's thesis defense
 author:
   name: Thorsten Seyschab
@@ -78,10 +78,9 @@ layout: two-cols
 
 <VClicks class="space-y-2 text-xl h-full mt-22">
 
+* <mdi-school-outline class="baseColor mr-2" /> Technische Universität Dresden
 * <mdi-desktop-classic class="baseColor mr-2" /> Informatiker aus Deutschland<br>
   <span class="text-sm ml-10">Spezialisiert in Web Technologien & Datenbanken</span>
-* <mdi-console class="baseColor mr-2" /> Full Stack Web Developer
-* <mdi-school-outline class="baseColor mr-2" /> Technische Universität Dresden
 * <mdi-email class="baseColor mr-2" /> [business@todde.tv](business@todde.tv)
 * <mdi-web class="baseColor mr-2" /> [https://todde.tv/](https://todde.tv/)
   * <mdi-github class="baseColor mr-2" /> [toddeTV](https://github.com/toddeTV)
@@ -89,56 +88,17 @@ layout: two-cols
 
 </VClicks>
 
----
-layout: two-cols
----
-
-<h1><span class="line-through mr-6">Über mich</span>FMADB Team</h1>
-
-<div class="flex flex-col justify-center items-center mt-14">
-  <img class="w-50 rounded-full"
-       src="/assets/persons/Thorsten-Seyschab.jpg"
-  />
-  <h2 class="mt-4">Thorsten Seyschab</h2>
-</div>
-
-<div class="absolute w-full flex flex-row justify-center left-0 px-40 pt-10">
-  <div>
-    <img class="h-15 p-2"
-         src="/assets/attribution_logos/TU-Dresden.svg"
-    />
-  </div>
-  <div>
-    <img class="h-15 p-2 mx-10"
-         src="/assets/attribution_logos/HfmDD.png"
-    />
-  </div>
-  <div>
-    <img class="h-15 p-2"
-         src="/assets/attribution_logos/epfl.svg"
-    />
-  </div>
-</div>
-
-::right::
-
-<h1 class="opacity-0">.</h1>
-
-<div class="flex flex-col justify-center items-center mt-14">
-  <img class="w-50 rounded-full"
-      src="/assets/persons/Susanne-Hardt.jpg"
-  />
-  <h2 class="mt-4">Susanne Hardt</h2>
-</div>
+<!-- * <mdi-console class="baseColor mr-2" /> Full Stack Web Developer -->
 
 <!--
-* Hfm vertreten durch Susanne
-* TU-Dresden vertreten durch mich
-* Epfl in der Schweiz als Expertenfeedback
-* und und und
-* Doch um zu verstehen, was FMADB ist und warum es einzigartig ist, müssen wir erst das übergeordnete Vorhaben verstehen.
+* Im Bachelor beruflich orientiert
+  * Backendlösungen und Datenbanken
+    * Bachelorarbeit
+  * später dann die Liebe zur Webentwicklung entdeckt
 -->
 
+---
+clicks: 3
 ---
 
 <AppReferenceToWrittenWork :pages="['1.1.', '1.2.']" />
@@ -158,9 +118,16 @@ layout: two-cols
 
 </VClicks>
 
-<div v-click class="text-2xl text-center mt-8 baseColor">
+<div class="absolute right-60 top-25 flex flex-col justify-center items-center" v-click="1">
+  <img class="w-35 rounded-full"
+      src="/assets/persons/Susanne-Hardt.jpg"
+  />
+  <span class="mt-2 text-xl">Susanne Hardt</span>
+</div>
+
+<div v-click="3" class="text-2xl text-center mt-8 baseColor">
   <mdi-arrow-right class="mr-2 pt-1" />
-  <span>Geht das nicht ohne einen Informatiker?</span>
+  <span>Geht das nicht ohne die Informatik?</span>
   <mdi-arrow-left class="ml-2 pt-1" />
 </div>
 
@@ -222,7 +189,7 @@ layout: two-cols
 
 <div v-click class="text-2xl text-center mt-11 text-gray-400">
   <mdi-arrow-right class="mr-2 pt-1" />
-  <span class="line-through">Geht das nicht ohne einen Informatiker?</span>
+  <span class="line-through">Geht das nicht ohne die Informatik?</span>
   <mdi-arrow-left class="ml-2 pt-1" />
 </div>
 
@@ -240,6 +207,42 @@ layout: two-cols
 * von anderen kann man nicht nutzen, daher immer wieder von vorne
 * Wie meine Recherche zeigte, gibt es momentan nichts hierfür //TODO grob als eigene Folie?
 * Das heisst, wir muessen da ran.
+-->
+
+---
+
+# Das Ergebnis: FMADB
+
+<VClicks class="space-y-10 mt-15 text-xl">
+
+* Webservice unter: <a href="https://fmadb.org/" target="_blank">https://fmadb.org/</a>
+* Interdisziplinäre Zusammenarbeit über unterschiedliche Universitäten unterschiedlicher Länder
+
+</VClicks>
+
+<div class="w-full flex flex-row justify-center mt-10" v-after>
+  <div>
+    <img class="h-20 p-4"
+         src="/assets/attribution_logos/TU-Dresden.svg"
+    />
+  </div>
+  <div>
+    <img class="h-20 p-4 mx-10"
+         src="/assets/attribution_logos/HfmDD.png"
+    />
+  </div>
+  <div>
+    <img class="h-20 p-4"
+         src="/assets/attribution_logos/epfl.svg"
+    />
+  </div>
+</div>
+
+<!--
+* Hfm vertreten durch Susanne
+* TU-Dresden vertreten durch mich
+* Epfl in der Schweiz als Expertenfeedback
+* und und und
 -->
 
 ---
@@ -651,13 +654,13 @@ clicks: 7
             <VscodeIconsFileTypeGraphql class="mr-2" /> GraphQL
           </div>
           <div>
-            <VscodeIconsFileTypeRest class="mr-2" /> REST
+            <LogosPrisma class="mr-2" /> Prisma
           </div>
           <div>
             <LogosPostgresql class="mr-2" /> PostgreSQL
           </div>
           <div>
-            <LogosPrisma class="mr-2" /> Prisma
+            <VscodeIconsFileTypeRest class="mr-2" /> REST
           </div>
         </div>
       </div>
@@ -747,13 +750,18 @@ clicks: 7
     </div>
   </div>
 
-  <div class="w-full h-33 bg-red-600/10 border-2 border-red-600 rounded-lg absolute top-7.5" v-click></div>
-  <div class="w-full h-8 bg-green-600/10 border-2 border-green-600 rounded-lg absolute top-41" v-after></div>
-  <div class="w-145 h-8 bg-blue-600/10 border-2 border-blue-600 rounded-lg absolute top-49.5" v-after></div>
+  <div v-click class="w-full h-33 bg-red-600/10 border-2 border-red-600 rounded-lg absolute top-7.5"></div>
+
+  <div v-click class="w-72 h-8 bg-green-600/10 border-2 border-green-600 rounded-lg absolute top-41"></div>
+  <div v-after class="w-155.5 h-8 bg-green-600/10 border-2 border-green-600 rounded-lg absolute top-41 left-72.5"></div>
+
+  <div v-click class="w-145 h-8 bg-blue-600/10 border-2 border-blue-600 rounded-lg absolute top-49.5"></div>
   
-  <div class="w-73 h-8 bg-yellow-600/10 border-l-2 border-y-2 border-yellow-600 rounded-l-lg absolute top-58" v-after></div>
-  <div class="w-72 h-16 bg-yellow-600/10 border-r-2 border-y-2 border-yellow-600 rounded-r-lg absolute top-58 left-73" v-after></div>
-  <div class="w-72 h-8 border-l-2 border-yellow-600 rounded-r-lg absolute top-65.5 left-73" v-after></div>
+  <div v-click class="w-73 h-8 bg-yellow-600/10 border-l-2 border-y-2 border-yellow-600 rounded-l-lg absolute top-58"></div>
+  <div v-after class="w-72 h-16 bg-yellow-600/10 border-r-2 border-y-2 border-yellow-600 rounded-r-lg absolute top-58 left-73"></div>
+  <div v-after class="w-72 h-8 border-l-2 border-yellow-600 rounded-r-lg absolute top-65.5 left-73"></div>
+
+  <div v-click class="w-72.5 h-16 bg-fuchsia-600/10 border-2 border-fuchsia-600 rounded-lg absolute top-66.5"></div>
 </div>
 
 <!--
@@ -809,9 +817,10 @@ clicks: 7
    * Movie
    * Genre
    * Timeline
-4. Timelineelement: Bpm -> Werte in sich
+4. Timelineelemente haben alle die gleichen Grundvariablen
+   * z.B. Timelineelement: Bpm -> Werte in sich
 5. Timelineelement: Dynamic -> mit Enums
-6. gesamt -> verstanden
+6. gesamt -> verstanden, macht Sinn & gut strukturiert
 -->
 
 ---
@@ -915,6 +924,12 @@ clicks: 7
   <img src="/assets/written-work/page-001_cover-page.jpg" class="h-100 mx-auto border" />
 </div>
 
+<!--
+* Mehr nachzulesen in meiner schriftlichen Arbeit
+* Titel vorlesen
+* Welche sich über 127 großartige Seiten erstreckt ...
+-->
+
 ---
 
 # Mehr in meiner schriftlichen Arbeit
@@ -925,9 +940,21 @@ clicks: 7
   <img src="/assets/written-work/page-007_table-of-contents-3.jpg" class="h-100 mx-auto border" />
 </div>
 
+<!--
+* ... und wie folgt strukturiert ist
+-->
+
 ---
 
 # Literatur
+
+<div class="flex flex-row mb-4 baseColor">
+  <div class="text-justify">
+    Thorsten Seyschab "<span class="italic">Konzeption und Implementierung einer Software zur Erfassung und
+    Auswertung von Filmmusikanalysen mit Fokus auf grundlegenden musiktheoretischen Parametern</span>"
+    (Masterarbeit, Abgabe 2022-12-31)
+  </div>
+</div>
 
 <div class="flex flex-row mb-4">
   <div class="w-25 flex-shrink-0 flex-grow-0">
@@ -936,7 +963,7 @@ clicks: 7
   <div class="text-justify">
     Sandra K Marshall und Annabel J Cohen. "Effects of musical soundtracks on attitudes
     toward animated geometric figures". Englisch. In: <span class="italic">Music perception</span> 6.1 (1988), S. 95–
-    112. DOI:
+    1.   DOI:
     <a href="https://doi.org/10.2307/40285417" target="_blank">https://doi.org/10.2307/40285417</a>.
   </div>
 </div>
