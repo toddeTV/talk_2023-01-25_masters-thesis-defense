@@ -213,14 +213,19 @@ clicks: 3
 
 # Das Ergebnis: FMADB
 
-<VClicks class="space-y-10 mt-15 text-xl">
+<div v-click class="mt-15 text-xl">
 
 * Webservice unter: <a href="https://fmadb.org/" target="_blank">https://fmadb.org/</a>
+
+</div>
+
+<div v-click class="mt-4 text-xl">
+
 * Interdisziplinäre Zusammenarbeit über unterschiedliche Universitäten unterschiedlicher Länder
 
-</VClicks>
+</div>
 
-<div class="w-full flex flex-row justify-center mt-10" v-after>
+<div class="w-full flex flex-row justify-center mt-4" v-after>
   <div>
     <img class="h-20 p-4"
          src="/assets/attribution_logos/TU-Dresden.svg"
@@ -236,6 +241,15 @@ clicks: 3
          src="/assets/attribution_logos/epfl.svg"
     />
   </div>
+</div>
+
+<div v-click class="mt-4 text-xl">
+
+* Software vorgestellt auf Kongressen
+  * Jahreskongress der Gesellschaft für Musiktheorie (2022-09-30 bis 2022-10-02 in Salzburg)
+  * Symposium "Musiktheorie und audiovisuelle Medien - musiktheoretische und pädagogische Perspektiven"
+    (2022-10-28 bis 2022-10-29 in Dresden)
+
 </div>
 
 <!--
