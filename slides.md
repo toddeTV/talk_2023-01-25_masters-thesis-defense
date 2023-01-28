@@ -86,10 +86,10 @@ layout: two-cols
 * <mdi-school-outline class="baseColor mr-2" /> Technische Universität Dresden
 * <mdi-desktop-classic class="baseColor mr-2" /> Informatiker aus Deutschland<br>
   <span class="text-sm ml-10">Spezialisiert in Web Technologien & Datenbanken</span>
-* <mdi-email class="baseColor mr-2" /> [business@todde.tv](business@todde.tv)
 * <mdi-web class="baseColor mr-2" /> [https://todde.tv/](https://todde.tv/)
   * <mdi-github class="baseColor mr-2" /> [toddeTV](https://github.com/toddeTV)
   * <mdi-gitlab class="baseColor mr-2" /> [toddeTV](https://gitlab.com/toddeTV)
+* <mdi-email class="baseColor mr-2" /> [business@todde.tv](business@todde.tv)
 
 </VClicks>
 
@@ -296,7 +296,7 @@ clicks: 5
 
 <VClicks class="text-lg pt-9">
 
-* Unterschiedliche Namen (Sprachen & Länder)
+* Unterschiedliche Namen & Erscheinungsjahre
   * [ger] Der Herr der Ringe - Die Gefährten
   * [eng] The Lord of the Rings: The Fellowship of the Ring
 * Unterschiedliche Längen zwischen und innerhalb Länder
@@ -315,7 +315,8 @@ clicks: 5
 </div>
 
 <div class="w-full text-lg absolute left-63.5 top-18 bg-white h-18" v-click>
-<mdi-check class="text-green-500" /> global nur Englische Titel durch crawlen nutzen
+<mdi-check class="text-green-500" /> nur englische Titel durch crawlen nutzen<br>
+<mdi-check class="text-green-500" /> nur amerikanisches Erscheinungsjahr
 </div>
 
 <div class="w-full text-lg absolute left-63.5 top-42.5 bg-white h-18" v-click>
@@ -348,13 +349,13 @@ clicks: 5
 
 * viele <mdi-exclamation-thick class="text-red-500" />
   * BPM, Time Signature, Dynamic, Scale, Effect, Cluster, Function, ...
+* Parameter sind verschieden und facettenreich
+  * z.B. BPM nicht nur reine Zahlen (Accelerando, Unbekannt, ...)
 * unterschiedliche Herangehensweisen für gleiche Parameter
   * Hansjörg Pauli definiert 3 Funktionen von Filmmusik
   * Norbert Jürgen Schneider definiert 20 Funktionen von Filmmusik
 * unterschiedliche Bezeichnungen für gleiche Parameter
   * Diegetische Musik == Inzidenzmusik == Source-Musik
-* Parameter sind verschieden und facettenreich
-  * z.B. BPM nicht nur reine Zahlen (Accelerando, Unbekannt, ...)
 
 </VClicks>
 
@@ -374,16 +375,16 @@ Kategorien:
 </ul>
 </div>
 
-<div class="w-full absolute top-25 left-8 bg-white h-18" v-click>
+<div class="w-full absolute top-25 left-8 bg-white" v-click>
+<mdi-check class="text-green-500" /> Sonderfälle durch individuelle Lösungen abdecken
+</div>
+
+<div class="w-full absolute top-42 left-8 bg-white h-18" v-click>
 <mdi-check class="text-green-500" /> festlegen und User ggf Freiraum ermöglichen
 </div>
 
-<div class="w-full absolute top-50 left-8 bg-white" v-click>
+<div class="w-full absolute top-67 left-8 bg-white" v-click>
 <mdi-check class="text-green-500" /> festlegen und User ggf Terminologieänderungen ermöglichen
-</div>
-
-<div class="w-full absolute top-66 left-8 bg-white" v-click>
-<mdi-check class="text-green-500" /> Sonderfälle durch individuelle Lösungen abdecken
 </div>
 
 </div>
@@ -856,7 +857,7 @@ clicks: 7
   * Umfang des Datenmodells bewältigen
   * Parameter `Orchestration`: Detailgrad
 * Programierung schwierig:
-  * Prisma in NestJS als Code-First-Approach mit Automatischen Datenbankmigrationen
+  * Prisma in NestJS als Code-First-Approach mit automatischen Datenbankmigrationen
   * Prisma Client in GraphQL in NestJS nutzen
   * Pagination mit Prisma Client in NestJS
   * Yarn v3 PnP nicht mit Prisma möglich
