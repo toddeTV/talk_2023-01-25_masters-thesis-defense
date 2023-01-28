@@ -10,6 +10,10 @@ The slides are partially based on my talk
 
 The presented language is `German`, the repository and documentation language of FMADB is `English`.
 
+You can find pre deployed slides here, so that you can view them without the need of pulling the code and setting
+the project up yourself:  
+[https://toddetv-masters-thesis-defense.netlify.app/1](https://toddetv-masters-thesis-defense.netlify.app/1)
+
 ## development
 
 ### system requirement
